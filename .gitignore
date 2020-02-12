@@ -6,4 +6,5 @@
 *delta_snapshots/
 *message.txt
 *notebooks.log
+*__pycache__/
 
