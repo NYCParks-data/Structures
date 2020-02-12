@@ -1,0 +1,142 @@
+/***********************************************************************************************************************
+																													   	
+ Created By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management         											   
+ Modified By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management 																						   			          
+ Created Date:  12/05/2019																							   
+ Modified Date: 02/10/2020																							   
+											       																	   
+ Project: StructuresDB
+ 																							   
+ Tables Used: <Database>.<Schema>.<Table Name1>																							   
+ 			  <Database>.<Schema>.<Table Name2>																								   
+ 			  <Database>.<Schema>.<Table Name3>				
+			  																				   
+ Description: <Lorem ipsum dolor sit amet, legimus molestiae philosophia ex cum, omnium voluptua evertitur nec ea.     
+	       Ut has tota ullamcorper, vis at aeque omnium. Est sint purto at, verear inimicus at has. Ad sed dicat       
+	       iudicabit. Has ut eros tation theophrastus, et eam natum vocent detracto, purto impedit appellantur te	   
+	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
+																													   												
+***********************************************************************************************************************/
+use structuresdb
+go
+
+set ansi_nulls on;
+go
+
+set quoted_identifier on;
+go
+
+create or alter procedure dbo.sp_i_tbl_delta_structures as
+begin
+		if object_id('tempdb..#deltas') is not null
+			drop table #deltas;
+
+		create table #deltas(fid int identity(1,1) primary key,
+							 objectid int not null,
+							 parks_id nvarchar(30),
+							 bin int,
+							 bbl nvarchar(10),
+							 doitt_id int,
+							 ground_elevation int,
+							 height_roof numeric(38,8),
+							 construction_year smallint,
+							 alteration_year smallint,
+							 demolition_year smallint,
+							 api_call nvarchar(1),
+							 doitt_source nvarchar(30),
+							 shape geometry);
+
+		insert into #deltas(parks_id,
+							objectid,
+							bin,
+							bbl,
+							doitt_id,
+							ground_elevation,
+							height_roof,
+							construction_year,
+							alteration_year,
+							demolition_year,
+							doitt_source,
+							api_call,
+							shape)
+
+			select l.parks_id,
+				   l.objectid,
+				   r.bin,
+				   r.base_bbl as bbl,
+				   r.doitt_id,
+				   r.ground_elevation,
+				   r.height_roof,
+				   r.construction_year,
+				   r.alteration_year,
+				   r.demolition_year,
+				   r.doitt_source,
+				   'U' as api_call,
+				   r.shape
+			from structuresdb.dbo.tbl_parks_structures as l
+			inner join
+				 structuresdb.dbo.tbl_doitt_structures as r
+			on l.doitt_id = r.doitt_id
+			where l.doitt_id is not null and
+				  l.n_doitt_ids <= 1 and
+				  (l.row_hash != r.row_hash or 
+				   /*l.shape.STEquals(r.shape) = 0*/
+				   dbo.fn_STFuzzyEquals(l.shape, r.shape, .000001) = 0) and
+				  l.unexpected_change = 0 and
+				  l.parks_overlap = 0
+
+	if @@rowcount > 0
+		begin
+			begin try
+				begin transaction
+					truncate table structuresdb.dbo.tbl_delta_structures;
+				commit; 
+
+				begin transaction;
+					insert into structuresdb.dbo.tbl_delta_structures(parks_id,
+																	  objectid,
+																	  bin,
+																	  bbl,
+																	  doitt_id,
+																	  ground_elevation,
+																	  height_roof,
+																	  construction_year,
+																	  alteration_year,
+																	  demolition_year,
+																	  api_call,
+																	  doitt_source,												  
+																	  shape)
+
+						select parks_id,
+							   objectid,
+							   bin,
+							   bbl,
+							   doitt_id,
+							   ground_elevation,
+							   height_roof,
+							   construction_year,
+							   alteration_year,
+							   demolition_year,
+							   api_call,
+							   doitt_source,
+							   shape
+						from #deltas;
+				commit;
+
+				begin transaction;
+					insert into structuresdb.dbo.tbl_audit_structures(parks_id,
+																	  audit_step_id)
+
+						select parks_id,
+							   1 as audit_step_id
+						from #deltas;
+				commit;
+			end try
+
+			begin catch
+				rollback transaction;
+			end catch
+		end;
+end;
+
+ 

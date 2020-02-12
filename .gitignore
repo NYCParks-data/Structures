@@ -1,0 +1,9 @@
+*config.ini
+*.ipynb_checkpoints/
+*.pyc
+*mycontacts.txt
+*snapshots/
+*delta_snapshots/
+*message.txt
+*notebooks.log
+
