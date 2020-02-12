@@ -85,7 +85,7 @@ if __name__ == '__main__':
     logging.getLogger('').addHandler(console)
 
     # Check if the subfolders for notebooks exist, and create them if they don't
-    for directory in ['daily','hourly','weekly', 'weekly2']:
+    for directory in ['weekly1', 'weekly2']:
         if os.path.isdir(directory) == False:
             os.mkdir(directory)
 
