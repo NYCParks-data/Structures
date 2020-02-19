@@ -3,18 +3,15 @@
  Created By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management         											   
  Modified By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management  																						   			          
  Created Date:  12/23/2019																							   
- Modified Date: 02/12/2020																							   
+ Modified Date: 02/19/2020																							   
 											       																	   
  Project: StructuresDB	
  																							   
- Tables Used: <Database>.<Schema>.<Table Name1>																							   
- 			  <Database>.<Schema>.<Table Name2>																								   
- 			  <Database>.<Schema>.<Table Name3>				
+ Tables Used: structuresdb.dbo.tbl_parks_structures																							   
+ 			  [gisprod].parksgis.dpr.structure_evw																							   			
 			  																				   
- Description: <Lorem ipsum dolor sit amet, legimus molestiae philosophia ex cum, omnium voluptua evertitur nec ea.     
-	       Ut has tota ullamcorper, vis at aeque omnium. Est sint purto at, verear inimicus at has. Ad sed dicat       
-	       iudicabit. Has ut eros tation theophrastus, et eam natum vocent detracto, purto impedit appellantur te	   
-	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
+ Description: This script merges parksgis structures with the existing structures table in structuresdb making updates,
+		      inserts and deletes in the appropriate scenarios.
 																													   												
 ***********************************************************************************************************************/
 use structuresdb
@@ -43,7 +40,7 @@ create or alter procedure dbo.sp_m_tbl_parks_structures as
 			   alteration_year,
 			   demolition_year,
 			   count(*) over(partition by doitt_id) as n_doitt_ids,
-			   hashbytes('SHA2_256', concat_ws('|', objectid, bin, bbl, doitt_id, ground_elevation, height_roof, construction_year, alteration_year, demolition_year, doitt_source)) as row_hash,
+			   hashbytes('SHA2_256', concat_ws('|', bin, bbl, doitt_id, ground_elevation, height_roof, construction_year, alteration_year, demolition_year, doitt_source)) as row_hash,
 			   doitt_source,
 			   n_system,
 			   shape							   
@@ -57,7 +54,7 @@ create or alter procedure dbo.sp_m_tbl_parks_structures as
 				merge structuresdb.dbo.tbl_parks_structures as tgt using #parks as src
 					on tgt.parks_id = src.parks_id
 					/*Include rows that matched on parks_id, but had differing row hashes or shapes and had unique, non-null parks_id values.*/
-					when matched and (tgt.row_hash != src.row_hash or dbo.fn_STFuzzyEquals(tgt.shape, src.shape, .000001) = 0) and src.n_system = 1 and src.parks_id is not null
+					when matched and (tgt.row_hash != src.row_hash or dbo.fn_STFuzzyEquals(tgt.shape, src.shape, .000001) = 0) and src.n_system = 1 and src.parks_id is not null and src.objectid != tgt.objectid
 						then update set tgt.parks_id = src.parks_id, 
 										tgt.objectid = src.objectid, 
 										tgt.bin = src.bin, 

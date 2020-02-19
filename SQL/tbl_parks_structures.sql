@@ -3,7 +3,7 @@
  Created By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management         											   
  Modified By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management 																						   			          
  Created Date:  12/20/2019																							   
- Modified Date: 02/06/2020																						   
+ Modified Date: 02/19/2020																						   
 											       																	   
  Project: StructuresDB	
  																							   
@@ -11,10 +11,7 @@
  			  <Database>.<Schema>.<Table Name2>																								   
  			  <Database>.<Schema>.<Table Name3>				
 			  																				   
- Description: <Lorem ipsum dolor sit amet, legimus molestiae philosophia ex cum, omnium voluptua evertitur nec ea.     
-	       Ut has tota ullamcorper, vis at aeque omnium. Est sint purto at, verear inimicus at has. Ad sed dicat       
-	       iudicabit. Has ut eros tation theophrastus, et eam natum vocent detracto, purto impedit appellantur te	   
-	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
+ Description: Create the table that will hold the copy of ParksGIS structures, but with constraints added.									   
 																													   												
 ***********************************************************************************************************************/
 set ansi_nulls on;
@@ -37,7 +34,7 @@ create table structuresdb.dbo.tbl_parks_structures(fid int not null unique ident
 												   construction_year smallint,
 												   alteration_year smallint,
 												   demolition_year smallint,
-												   row_hash as hashbytes('SHA2_256', concat_ws('|', objectid, bin, bbl, doitt_id, ground_elevation, height_roof, construction_year, alteration_year, demolition_year, doitt_source)) persisted,
+												   row_hash as hashbytes('SHA2_256', concat_ws('|', bin, bbl, doitt_id, ground_elevation, height_roof, construction_year, alteration_year, demolition_year, doitt_source)) persisted,
 												   n_doitt_ids int,
 												   doitt_source nvarchar(30),
 												   overlap_except bit,
