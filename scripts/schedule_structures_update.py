@@ -87,7 +87,7 @@ if __name__ == '__main__':
     # Check if the subfolders for notebooks exist, and create them if they don't
     for directory in ['weekly1', 'weekly2']:
         if os.path.isdir(directory) == False:
-            os.mkdir(directory)
+            # os.mkdir(directory)
 
     # Get optional directory passed in via command line. If this is specified, then we just process the requested directory. 
     # This is useful if you're scheduling the processing with an external task scheduler
