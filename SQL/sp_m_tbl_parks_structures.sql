@@ -8,7 +8,7 @@
  Project: StructuresDB	
  																							   
  Tables Used: structuresdb.dbo.tbl_parks_structures																							   
- 			  [gisprod].parksgis.dpr.structure_evw																							   			
+ 			  [gisdata].parksgis.dpr.structure_evw																							   			
 			  																				   
  Description: This script merges parksgis structures with the existing structures table in structuresdb making updates,
 		      inserts and deletes in the appropriate scenarios.
@@ -45,7 +45,7 @@ create or alter procedure dbo.sp_m_tbl_parks_structures as
 			   n_system,
 			   shape							   
 		into #parks
-		from openquery([gisprod], 'select *, count(*) over(partition by system order by system) as n_system from parksgis.dpr.structure_evw')
+		from openquery([gisdata], 'select *, count(*) over(partition by system order by system) as n_system from parksgis.dpr.structure_evw')
 		/*where n_system = 1 and
 			  system is not null*/
 		/*Try the transactions and if they fail roll them back.*/

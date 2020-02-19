@@ -3,18 +3,15 @@
  Created By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management         											   
  Modified By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management 																						   			          
  Created Date:  01/10/2019																							   
- Modified Date: 02/12/2020																							   
+ Modified Date: 02/19/2020																							   
 											       																	   
  Project: StructuresDB	
  																							   
- Tables Used: <Database>.<Schema>.<Table Name1>																							   
- 			  <Database>.<Schema>.<Table Name2>																								   
- 			  <Database>.<Schema>.<Table Name3>				
+ Tables Used: [gisdata].parksgis.dpr.structure_evw																							   
+ 			  structuresdb.dbo.tbl_delta_structures																								   				
 			  																				   
- Description: <Lorem ipsum dolor sit amet, legimus molestiae philosophia ex cum, omnium voluptua evertitur nec ea.     
-	       Ut has tota ullamcorper, vis at aeque omnium. Est sint purto at, verear inimicus at has. Ad sed dicat       
-	       iudicabit. Has ut eros tation theophrastus, et eam natum vocent detracto, purto impedit appellantur te	   
-	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
+ Description: This script compares the previous iteration of deltas with the existing ParksGIS structures data. The
+			   attributes in these rows should be equal between both tables.
 																													   												
 ***********************************************************************************************************************/
 use structuresdb
@@ -43,10 +40,10 @@ begin
 		   demolition_year,
 		   last_edited_user,
 		   last_edited_date,
-		   hashbytes('SHA2_256', concat_ws('|', objectid, bin, bbl, doitt_id, ground_elevation, height_roof, construction_year, alteration_year, demolition_year)) as row_hash,
+		   hashbytes('SHA2_256', concat_ws('|', bin, bbl, doitt_id, ground_elevation, height_roof, construction_year, alteration_year, demolition_year)) as row_hash,
 		   shape							   
 	into #parks
-	from openquery([gisprod], 'select *, count(*) over(partition by system order by system) as n_system from parksgis.dpr.structure_evw')
+	from openquery([gisdata], 'select *, count(*) over(partition by system order by system) as n_system from parksgis.dpr.structure_evw')
 	where n_system = 1 and
 		  system is not null;
 	
@@ -113,14 +110,15 @@ begin
 							   l.shape as delta_shape,
 							   r.shape as gis_shape
 						from (select *,
-									 hashbytes('SHA2_256', concat_ws('|', objectid, bin, bbl, doitt_id, ground_elevation, height_roof, construction_year, alteration_year, demolition_year)) as row_hash
+									 hashbytes('SHA2_256', concat_ws('|', bin, bbl, doitt_id, ground_elevation, height_roof, construction_year, alteration_year, demolition_year)) as row_hash
 							  from structuresdb.dbo.tbl_delta_structures) as l
 						inner join
 							  #parks as r
 						on l.parks_id = r.parks_id and
 						   (l.row_hash != r.row_hash or
 							--l.shape.STEquals(r.shape) = 0
-							dbo.fn_STFuzzyEquals(l.shape, r.shape, .000001) = 0);
+							dbo.fn_STFuzzyEquals(l.shape, r.shape, .000001) = 0 or
+							l.objectid != r.objectid);
 						--where last_edited_user = 'NYCDPR\py_services'
 				commit;
 			end try
