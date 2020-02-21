@@ -85,14 +85,13 @@ if __name__ == '__main__':
     logging.getLogger('').addHandler(console)
 
     # Check if the subfolders for notebooks exist, and create them if they don't
-    for directory in ['weekly1', 'weekly2']:
+    for directory in ['weekly_pre_QA', 'weekly_post_QA']:
         if os.path.isdir(directory) == False:
-            # os.mkdir(directory)
+            os.mkdir(directory)
 
     # Get optional directory passed in via command line. If this is specified, then we just process the requested directory. 
     # This is useful if you're scheduling the processing with an external task scheduler
     # If directory is not specified, then we'll set up our own scheduler and process the tasks
-
     parser = argparse.ArgumentParser(description = "NotebookScheduler options")
     parser.add_argument("-d", "--directory", help = "Which set of notebooks to process - e.g. hourly", required = False, default = False)
     argument = parser.parse_args()
@@ -109,19 +108,10 @@ if __name__ == '__main__':
         print("Starting scheduler...")
 
         # If no directory has been specified, schedule the processing and execute
-        # schedule.every().hour.at(':00').do(processNotebooks, notebookDirectory='hourly')
-        # schedule.every().hour.at(':25').do(processNotebooks, notebookDirectory='hourly')
-        # schedule.every().day.at('04:15').do(processNotebooks, notebookDirectory='daily')
-        # schedule.every().thursday.at('17:01').do(processNotebooks, notebookDirectory='weekly')
-        # schedule.every().wednesday.at('12:01').do(processNotebooks, notebookDirectory='weekly')
-        #schedule.every().sunday.at('07:00').do(processNotebooks, notebookDirectory='weekly')
-        # schedule.every().thursday.at('15:13').do(processNotebooks, notebookDirectory='weekly')
-        #schedule.every().sunday.at('09:00').do(processNotebooks, notebookDirectory='weekly2')
-        schedule.every().sunday.at('07:00').do(processNotebooks, notebookDirectory='weekly1')
-        # schedule.every().thursday.at('15:13').do(processNotebooks, notebookDirectory='weekly')
-        schedule.every().friday.at('22:00').do(processNotebooks, notebookDirectory='weekly2')
-        # schedule.every().monday.at('15:49').do(processNotebooks, notebookDirectory='weekly')
-        # schedule.every().day.at('14:15').do(processNotebooks, notebookDirectory='monthly', days=[1])
+       
+        schedule.every().sunday.at('07:00').do(processNotebooks, notebookDirectory='weekly_pre_QA')
+        schedule.every().friday.at('22:00').do(processNotebooks, notebookDirectory='weekly_post_QA')
+        
 
         # Run the scheduled tasks
         while True:

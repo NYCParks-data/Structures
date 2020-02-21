@@ -1,0 +1,10 @@
+Dear ${PERSON_NAME}, 
+
+There was at least one MultiPolygon found in the delta_structures table. Please push updates for these rows separately from the script.
+
+Please see below for more details:
+
+${ERROR}
+
+Thanks,
+Data team at IPM
