@@ -8,12 +8,12 @@ sys.path.append('../')
 from IPM_Shared_Code.Python.utils import get_config
 
 
-config = get_config('c:\Projects\config_dev.ini')
+config = get_config('c:\Projects\config.ini')
 geo_key = config['keys']['geosupport_key']
 geo_ip = config['keys']['geosupport_ip']
 
 
-api_key = geo_key
+# api_key = geo_key
 grc_err = ['01/F', '20', '21', '22', '23']
 out_keys = [
     'AddressRangeList', 'out_bbl', 'out_TPAD_bin', 'out_TPAD_bin_status',
@@ -24,7 +24,7 @@ out_keys = [
 
 def funcbn(bn=None, out_keys=None, grc_err=None,api_key=None,ip=None):
     
-    url = 'http://{}/geoservice/geoservice.svc/Function_BIN?BIN={}&key={}'.format(ip, bn, api_key)
+    url = 'http://{}/geoservice/geoservice.svc/Function_BIN?BIN={}&key={}'.format(ip, bn, geo_key)
     #Encode the url, but allow the characters specified in the safe argument.
     url = quote(url, safe = ':/?&=')
     
@@ -63,7 +63,7 @@ def funcbn(bn=None, out_keys=None, grc_err=None,api_key=None,ip=None):
 
 def func1b(borough=None, addressno=None, streetname=None, api_key=None, ip=None):
     url = ('http://{}/geoservice/geoservice.svc/Function_1B?Borough={}&AddressNo={}&StreetName={}&key={}'.
-           format(ip, borough, addressno, streetname, api_key))
+           format(ip, borough, addressno, streetname, geo_key))
     #Encode the url, but allow the characters specified in the safe argument.
     url = quote(url, safe = ':/?&=')
     
