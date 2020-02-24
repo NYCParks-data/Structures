@@ -1,0 +1,10 @@
+Dear ${PERSON_NAME}, 
+
+This is a courtesy message to let you know updates to the Structure layer were pushed successfully.
+
+Details:
+
+${ERROR}
+
+Thanks,
+Data team at IPM
