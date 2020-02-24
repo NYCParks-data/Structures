@@ -46,7 +46,7 @@ will be updated via a weekly ETL script (details can soon be found in the wiki).
 
 ## Purpose of this document
 The purpose of this data product overview is to identify and describe the
-attributes within Structures that are derived from other data sources and are updated via an automated
+attributes within Structures that are derived from other data sources and are updated internally via an automated
 ETL script. This document also identifies the source systems, tables, fields, as well as the owners of 
 those source fields. 
 
@@ -54,10 +54,10 @@ those source fields.
 ## Attribute Table
 | Attribute              | Description       | Generative Process   | Derived from Another Source | Source Data Owner / Modifier |
 |------------------------|-------------------|----------------------|-----------------------------|------------------------------|
-| **SYSTEM**           | Unique Parks ID of the Structure  |          | Yes    |               |
+| **SYSTEM**           | Unique Parks ID of the Structure  |          | No     |               | IT/GIS
 | **BIN**              |                                   |          | Yes    |               |
 | **BBL**              |                                   |          | Yes    |               |
-| **DOITT_id**         |                                   |          | Yes    |               |
+| **DOITT_ID**         |                                   |          | Yes    |               |
 | **Ground_Elevation** |                                   |          | Yes    |               |
 | **Height_Roof**      |                                   |          | Yes    |               |
 | **Alteration_Year**  |                                   |          | Yes    |               |
