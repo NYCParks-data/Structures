@@ -27,10 +27,9 @@ create or alter procedure dbo.sp_insert_test_deltas as
 														  construction_year,
 														  alteration_year,
 														  demolition_year,
-														  api_call,
 														  doitt_source,												  
 														  shape)
-			select top 5 parks_id,
+			select parks_id,
 				   objectid,
 				   bin,
 				   bbl,
@@ -42,7 +41,7 @@ create or alter procedure dbo.sp_insert_test_deltas as
 				   demolition_year,
 				   doitt_source,		
 				   shape
-			from structuresdb.dbo.tbl_delta_structures_archive;
+			from openquery([IPMPROD], 'select * from structuresdb.dbo.tbl_delta_structures_archive');
 
 
 	commit;
