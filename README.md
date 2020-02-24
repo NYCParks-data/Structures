@@ -50,14 +50,6 @@ attributes within Structures that are derived from other data sources and are up
 ETL script. This document also identifies the source systems, tables, fields, as well as the owners of 
 those source fields. 
 
-**BIN**
-**BBL**
-**DOITT_ID**
-**Ground_Elevation**
-**Height_Roof**
-**Alteration_Year**
-**Construction_Year**
-**Demolition_Year**
 
 ## Attribute Table
 | Attribute              | Description       | Generative Process   | Derived from Another Source | Source Data Owner / Modifier |
