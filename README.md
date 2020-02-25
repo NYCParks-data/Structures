@@ -24,7 +24,7 @@ Additionally, the following related table(s) are currently being populated/updat
 
 **[ParksGIS].[DPR].[StructureGeosupport]**
 
-Finally, the following related tables(s) will soon be populated/updated via a similar process:
+Finally, the following related table(s) will soon be populated/updated via a similar process:
 
 **[ParksGIS].[DPR].[StructureForm]**
 
