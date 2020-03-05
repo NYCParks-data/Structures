@@ -50,6 +50,15 @@ attributes within Structures that are derived from other data sources and are up
 ETL script. This document also identifies the source systems, tables, fields, as well as the owners of 
 those source fields. 
 
+## Data Sources
+This ETL pulls data from several sources that are considered to be the authority for particular attributes.
+
+### DoITT
+(Building Footprints) [https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh#About]
+ - (Documentation) [https://github.com/CityOfNewYork/nyc-geo-metadata/blob/master/Metadata/Metadata_BuildingFootprints.md]
+ 
+### DCP
+(DCP)[]
 
 ## Attribute Table
 | Attribute              | Description       | Generative Process   | Derived from Another Source | Source Data Owner / Modifier |
