@@ -60,13 +60,13 @@ This ETL pulls data from several sources that are considered to be the authority
 ### DCP
 [DCP]()
 -
-
+Borough, block, and lot number for the tax lot that the footprint is physically located within.
 ## Attribute Table
 | Attribute              | Description       | Generative Process   | Derived from Another Source | Source Data Owner / Modifier |
 |------------------------|-------------------|----------------------|-----------------------------|------------------------------|
 | **SYSTEM**           | Unique Parks ID of the Structure  |          | No     |               | IT/GIS
-| **BIN**              |                                   |          | Yes    |               |
-| **BBL**              |                                   |          | Yes    |               |
+| **BIN**              | Building Identification Number. A number assigned by City Planning and used by Dept. of Buildings to reference information pertaining to an individual building. The first digit is a borough code (1 = Manhattan, 2 = The Bronx, 3 = Brooklyn, 4 = Queens, 5 = Staten Island). The remaining 6 digits are unique for buildings within that borough. In some cases where these 6 digits are all zeros (e.g. 1000000, 2000000, etc.) the BIN is unassigned or unknown.                                  |          | Yes    |               |
+| **BBL**              |Borough, block, and lot number for the tax lot that the footprint is physically located within.|          | Yes |               |
 | **DOITT_ID**         |                                   |          | Yes    |               |
 | **Ground_Elevation** |                                   |          | Yes    |               |
 | **Height_Roof**      |                                   |          | Yes    |               |
