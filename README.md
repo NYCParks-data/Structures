@@ -55,7 +55,8 @@ This ETL pulls data from several sources that are considered to be the authority
 
 ### DoITT
 [Building Footprints](https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh#About)
- - [Documentation](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/master/Metadata/Metadata_BuildingFootprints.md)
+ - [Data Documentation](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/master/Metadata/Metadata_BuildingFootprints.md)
+ - [Capture Rules Documentation](https://github.com/CityOfNewYork/nyc-planimetrics/blob/master/Capture_Rules.md)
  
 ### DCP
 [DCP]()
