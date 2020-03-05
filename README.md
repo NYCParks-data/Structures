@@ -24,15 +24,15 @@ Additionally, the following related table(s) are currently being populated/updat
 
 **[ParksGIS].[DPR].[StructureGeosupport]**
 
-Finally, the following related table(s) will soon be populated/updated via a similar process:
+At a later stage of this project the **[ParksGIS].[DPR].[StructureLandmarks]** will be updated through an ETL that matches data from the NYC Landmark Preservation Commission (LPC) to a Parks structure based on the BIN.
 
-**[ParksGIS].[DPR].[StructureForm]**
+The following tables are related to the [ParksGIS].[DPR].[Structure] through the SYSTEMID column. They will contain information that is managed by divisions or individuals at NYC Parks.
 
-**[ParksGIS].[DPR].[StructureFunction]**
+**[ParksGIS].[DPR].[StructureForm]** - The shape or configuration of a structure. Some examples include: air-supported, building and stadia. 
 
-**[ParksGIS].[DPR].[StructureLandmarks]**
+**[ParksGIS].[DPR].[StructureFunction]** - The intended use of a structure. Some examples include: comfort station, recreation center and food service.
 
-**[ParksGIS].[DPR].[StructurePIP]**
+**[ParksGIS].[DPR].[StructurePIP]** - Information specific to the Parks Inspection Program (PIP) that is not required to be stored in the main Structure table.
 
 ## Data Product Overview: Structures
 Currently, this dataset includes structures on NYC Parks properties that are broadly defined as *an assembly of materials 
