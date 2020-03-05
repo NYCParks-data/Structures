@@ -52,13 +52,16 @@ those source fields.
 
 ## Data Sources
 This ETL pulls data from several sources that are considered to be the authority for particular attributes.
-
-### DoITT
+### NYC Parks
+Structures
+ - This is a feature class within our internal, enterprise geographic information system (ParksGIS). In addition to the attributes updated through this ETL, there are additional attributes that are managed by individuals or divisions within NYC Parks.
+ 
+### NYC DoITT
 [Building Footprints](https://data.cityofnewyork.us/Housing-Development/Building-Footprints/nqwf-w8eh#About)
  - [Data Documentation](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/master/Metadata/Metadata_BuildingFootprints.md)
  - [Capture Rules Documentation](https://github.com/CityOfNewYork/nyc-planimetrics/blob/master/Capture_Rules.md)
  
-### DCP
+### NYC Planning
 [Geosupport](https://geoservice.planning.nyc.gov/)
 - Presumably this only available to New York City Agencies Only
 - [Function BIN Documentation](https://geoservice.planning.nyc.gov/FunctionBIN)
