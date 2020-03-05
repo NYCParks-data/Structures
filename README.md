@@ -72,7 +72,6 @@ Borough, block, and lot number for the tax lot that the footprint is physically 
 | **Ground_Elevation** |Lowest Elevation at the building ground level. Calculated from LiDAR or photogrammetrically.|          | Yes    |               |
 | **Height_Roof**      |Building Height is calculated as the difference from the building elevation from the Elevation point feature class and the elevation in the interpolated TIN model. This is the height of the roof above the ground elevation, NOT its height above sea level. Records where this is zero or NULL mean that this information was not available.|          | Yes    |               |
 | **Alteration_Year**  |                                   |          | Yes    |               |
-| **Construction_Year**|The year construction of the building was completed.
-Originally this column was populated using the Department of Finance Real Property Assessment Database (RPAD). Beginning in 2017 this will be the first year the completed structure is visible in available orthoimagery. Records where this is zero or NULL mean that this information was not available.|          | Yes    |               |
+| **Construction_Year**|The year construction of the building was completed.Originally this column was populated using the Department of Finance Real Property Assessment Database (RPAD). Beginning in 2017 this will be the first year the completed structure is visible in available orthoimagery. Records where this is zero or NULL mean that this information was not available.|          | Yes    |               |
 | **Demolition_Year**  |                                   |          | Yes    |               |
 
