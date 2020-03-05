@@ -1,0 +1,2 @@
+delete_tbl_audit_structures.sql
+sp_i_tbl_delta_structures.sql
