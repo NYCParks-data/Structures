@@ -65,12 +65,13 @@ Borough, block, and lot number for the tax lot that the footprint is physically 
 | Attribute              | Description       | Generative Process   | Derived from Another Source | Source Data Owner / Modifier |
 |------------------------|-------------------|----------------------|-----------------------------|------------------------------|
 | **SYSTEM**           | Unique Parks ID of the Structure  |          | No     |               | IT/GIS
-| **BIN**              | Building Identification Number. A number assigned by City Planning and used by Dept. of Buildings to reference information pertaining to an individual building. The first digit is a borough code (1 = Manhattan, 2 = The Bronx, 3 = Brooklyn, 4 = Queens, 5 = Staten Island). The remaining 6 digits are unique for buildings within that borough. In some cases where these 6 digits are all zeros (e.g. 1000000, 2000000, etc.) the BIN is unassigned or unknown.                                  |          | Yes    |               |
+| **BIN**              | Building Identification Number. A number assigned by City Planning and used by Dept. of Buildings to reference information pertaining to an individual building. The first digit is a borough code (1 = Manhattan, 2 = The Bronx, 3 = Brooklyn, 4 = Queens, 5 = Staten Island). The remaining 6 digits are unique for buildings within that borough. In some cases where these 6 digits are all zeros (e.g. 1000000, 2000000, etc.) the BIN is unassigned or unknown.|          | Yes    |               |
 | **BBL**              |Borough, block, and lot number for the tax lot that the footprint is physically located within.|          | Yes |               |
-| **DOITT_ID**         |                                   |          | Yes    |               |
-| **Ground_Elevation** |                                   |          | Yes    |               |
-| **Height_Roof**      |                                   |          | Yes    |               |
+| **DOITT_ID**         |Unique identifier assigned by DOITT.|          | Yes    |               |
+| **Ground_Elevation** |Lowest Elevation at the building ground level. Calculated from LiDAR or photogrammetrically.|          | Yes    |               |
+| **Height_Roof**      |Building Height is calculated as the difference from the building elevation from the Elevation point feature class and the elevation in the interpolated TIN model. This is the height of the roof above the ground elevation, NOT its height above sea level. Records where this is zero or NULL mean that this information was not available.|          | Yes    |               |
 | **Alteration_Year**  |                                   |          | Yes    |               |
-| **Construction_Year**|                                   |          | Yes    |               |
+| **Construction_Year**|The year construction of the building was completed.
+Originally this column was populated using the Department of Finance Real Property Assessment Database (RPAD). Beginning in 2017 this will be the first year the completed structure is visible in available orthoimagery. Records where this is zero or NULL mean that this information was not available.|          | Yes    |               |
 | **Demolition_Year**  |                                   |          | Yes    |               |
 
