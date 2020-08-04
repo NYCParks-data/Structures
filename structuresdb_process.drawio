@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T17:06:17.680Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="sJQ7-VjAYaHyK0HCGhXP" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T17:09:43.509Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="pGld4RwpgQmh-A8O_EVV" version="13.5.9" type="github">
   <diagram id="0K_w682T_4QIGgYg-x-B" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -78,6 +78,9 @@
         <mxCell id="8_0qM9o0vTW4_pNGCsYj-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="8_0qM9o0vTW4_pNGCsYj-19" target="8_0qM9o0vTW4_pNGCsYj-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="8_0qM9o0vTW4_pNGCsYj-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="8_0qM9o0vTW4_pNGCsYj-19" target="8_0qM9o0vTW4_pNGCsYj-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="8_0qM9o0vTW4_pNGCsYj-19" value="tbl_check_structures" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="365" y="600" width="120" height="60" as="geometry" />
         </mxCell>
@@ -92,6 +95,17 @@
         </mxCell>
         <mxCell id="8_0qM9o0vTW4_pNGCsYj-30" value="arcgis_api" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="880" y="490" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8_0qM9o0vTW4_pNGCsYj-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="1" source="8_0qM9o0vTW4_pNGCsYj-34" target="8_0qM9o0vTW4_pNGCsYj-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="580" />
+              <mxPoint x="455" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8_0qM9o0vTW4_pNGCsYj-34" value="Human Review" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="810" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
