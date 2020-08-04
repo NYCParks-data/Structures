@@ -1,1 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T13:51:05.581Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" version="13.5.9" etag="J9p9tupCB6kl5D4cZZxa" type="github"><diagram id="0K_w682T_4QIGgYg-x-B">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-08-04T16:57:09.730Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="mk6I9o9u2cujPC0m3NKN" version="13.5.9" type="github">
+  <diagram id="0K_w682T_4QIGgYg-x-B" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8_0qM9o0vTW4_pNGCsYj-1" value="doitt_buildings" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8_0qM9o0vTW4_pNGCsYj-2" value="structures_evw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8_0qM9o0vTW4_pNGCsYj-3" value="sp_m_tbl_doitt_structures" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="15" y="280" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8_0qM9o0vTW4_pNGCsYj-4" value="sp_m_tbl_park_structures" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="665" y="280" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8_0qM9o0vTW4_pNGCsYj-5" value="tbl_doitt_structures" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8_0qM9o0vTW4_pNGCsYj-6" value="tbl_park_structures" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
