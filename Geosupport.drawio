@@ -1,1 +1,134 @@
-<mxfile host="app.diagrams.net" modified="2020-08-06T16:06:02.479Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" version="13.5.9" etag="fm5YNWi6YlsAinjg9Mvr" type="github"><diagram id="P0ZCVF98Ue42GssgXytQ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-08-06T16:38:06.514Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="QbP9kI8ShKGpxxpQOazO" version="13.5.9" type="github">
+  <diagram id="P0ZCVF98Ue42GssgXytQ" name="Page-1">
+    <mxGraphModel dx="2272" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-1" target="Gs7SRbzFLweDe3SecU4g-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="140" />
+              <mxPoint x="290" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-1" target="Gs7SRbzFLweDe3SecU4g-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="140" />
+              <mxPoint x="390" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-1" value="Does the Parks structure have a BIN in DoITT Building footprints?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="280" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-2" target="Gs7SRbzFLweDe3SecU4g-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-2" value="&lt;b&gt;Input&amp;nbsp;into Geosupport Function BIN:&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;- BIN&lt;/span&gt;&lt;/div&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-3" target="Gs7SRbzFLweDe3SecU4g-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-3" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="270" y="160" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-4" target="Gs7SRbzFLweDe3SecU4g-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-4" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="370" y="160" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-7" target="Gs7SRbzFLweDe3SecU4g-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-7" value="Submit a CSCL ticket requesting a BIN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="330" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-9" value="No technical step remaining" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="310" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-11" value="&lt;i&gt;The minimal information required to submit a CSCL ticket is the internal Parks ID, an internal description and the geometry.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="215" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-14" target="Gs7SRbzFLweDe3SecU4g-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-14" target="Gs7SRbzFLweDe3SecU4g-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-14" value="Does the structure have a million BIN in DoITT Building Footprints?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-15" value="&lt;i&gt;A million BIN is a placeholder that was assigned to buildings by DCP&amp;nbsp; to allow addresses to be added to PAD.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="210" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-17" target="Gs7SRbzFLweDe3SecU4g-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-17" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="200" y="235" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-20" target="Gs7SRbzFLweDe3SecU4g-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-20" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="310" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-23" target="Gs7SRbzFLweDe3SecU4g-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-23" value="&lt;b&gt;Returns (4 fields):&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Borough Code&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Low Street Number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- High Street Number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Normalized Street Name&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-15" y="470" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-25" target="Gs7SRbzFLweDe3SecU4g-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-25" target="Gs7SRbzFLweDe3SecU4g-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-25" value="Is it a single point address?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-27" value="&lt;i&gt;Are the low house numbers and high house numbers equal?&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="590" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-29" target="Gs7SRbzFLweDe3SecU4g-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-29" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="680" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-30" target="Gs7SRbzFLweDe3SecU4g-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-30" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="160" y="605" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-33" target="Gs7SRbzFLweDe3SecU4g-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-33" value="Submit a CSCL ticket for validation and address suggestion?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-35" value="Submit form to Borough President&#39;s Topographic Bureau to request an address" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="590" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-39" target="Gs7SRbzFLweDe3SecU4g-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-39" value="&lt;b&gt;Input&amp;nbsp;into Geosupport Function 1B:&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;- Borough Code&lt;/span&gt;&lt;/div&gt;&lt;/b&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Street Number&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Normalized Street Name&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-12.5" y="740" width="145" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-41" value="&lt;b&gt;Returns (28 fields):&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;- Street-level Information&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- City Services Information&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Political Boundary Information&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- BBL&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-15" y="850" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-43" value="&lt;i&gt;Street Level includes:&lt;br&gt;TO COMPLETE&lt;br&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="850" width="130" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
