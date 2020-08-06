@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-06T16:45:40.703Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="_FORJhiGVDZ5H7o-06QA" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-06T16:46:49.410Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="o4Gk2OVERUbsfV00L2Ho" version="13.5.9" type="github">
   <diagram id="P0ZCVF98Ue42GssgXytQ" name="Page-1">
     <mxGraphModel dx="2272" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -47,7 +47,7 @@
         <mxCell id="Gs7SRbzFLweDe3SecU4g-7" value="Submit a CSCL ticket requesting a BIN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="330" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Gs7SRbzFLweDe3SecU4g-9" value="No technical step remaining" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-9" value="No technical step remaining" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="340" y="310" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="Gs7SRbzFLweDe3SecU4g-11" value="&lt;i&gt;The minimal information required to submit a CSCL ticket is the internal Parks ID, an internal description and the geometry.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -148,6 +148,12 @@
         </mxCell>
         <mxCell id="Gs7SRbzFLweDe3SecU4g-50" value="Retain output from Geosupport Function BIN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="200" y="820" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-55" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1020" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-56" value="&lt;b&gt;Start&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="50" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
