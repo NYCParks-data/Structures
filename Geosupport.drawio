@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-06T17:23:02.149Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="OiTv1aSopljbprV726d9" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-06T17:23:20.112Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="MXua14bFJNl2tJhn9sji" version="13.5.9" type="github">
   <diagram id="P0ZCVF98Ue42GssgXytQ" name="Page-1">
     <mxGraphModel dx="2272" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -181,7 +181,7 @@
         <mxCell id="Gs7SRbzFLweDe3SecU4g-59" value="Submit a CSCL ticket with scans of the BP documents to submit this information into both MSAG and CSCL." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="600" y="450" width="140" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="Gs7SRbzFLweDe3SecU4g-63" value="&lt;i&gt;See Diagram X for further information on this process&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-63" value="&lt;i&gt;See Diagram &lt;font color=&quot;#ff3333&quot;&gt;X&lt;/font&gt; for further information on this process&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="760" y="460" width="130" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Gs7SRbzFLweDe3SecU4g-64" value="&lt;b&gt;Input&amp;nbsp;to CSCL&lt;br&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#ffffff;" vertex="1" parent="1">
