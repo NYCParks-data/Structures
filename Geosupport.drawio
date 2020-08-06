@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-06T17:00:42.660Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="qzWf67UWW1ISng_BobAs" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-06T17:14:34.913Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="7pG9lFTLrU7hsH9ldxFN" version="13.5.9" type="github">
   <diagram id="P0ZCVF98Ue42GssgXytQ" name="Page-1">
     <mxGraphModel dx="2272" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -88,8 +88,8 @@
         <mxCell id="Gs7SRbzFLweDe3SecU4g-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-23" target="Gs7SRbzFLweDe3SecU4g-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Gs7SRbzFLweDe3SecU4g-23" value="&lt;b&gt;Returns (4 fields):&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Borough Code&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Low Street Number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- High Street Number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Normalized Street Name&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="-15" y="470" width="150" height="80" as="geometry" />
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-23" value="&lt;b&gt;Returns (6 fields):&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Borough Code&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Low Street Number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- High Street Number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Normalized Street Name&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Address Type&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- B7SC&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-15" y="460" width="150" height="100" as="geometry" />
         </mxCell>
         <mxCell id="Gs7SRbzFLweDe3SecU4g-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-25" target="Gs7SRbzFLweDe3SecU4g-30">
           <mxGeometry relative="1" as="geometry" />
@@ -139,7 +139,7 @@
         <mxCell id="Gs7SRbzFLweDe3SecU4g-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gs7SRbzFLweDe3SecU4g-41" target="Gs7SRbzFLweDe3SecU4g-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Gs7SRbzFLweDe3SecU4g-41" value="&lt;b&gt;Returns (28 fields):&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;- Street-level Information&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- City Services Information&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Political Boundary Information&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- BBL&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-41" value="&lt;b&gt;Returns (26 fields):&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;- Street-level Information&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- City Services Information&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- Political Boundary Information&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- BBL&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-12.5" y="860" width="150" height="100" as="geometry" />
         </mxCell>
         <mxCell id="Gs7SRbzFLweDe3SecU4g-43" value="&lt;i&gt;Street Level includes:&lt;br&gt;TO COMPLETE&lt;br&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" vertex="1" parent="1">
@@ -189,6 +189,9 @@
         </mxCell>
         <mxCell id="Gs7SRbzFLweDe3SecU4g-68" value="&lt;i&gt;After it&#39;s been added to CSCL this information would be pulled by the process outlined above.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="750" y="340" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Gs7SRbzFLweDe3SecU4g-69" value="&lt;i&gt;Some addresses returned may represent a common place name rather than a street name and number, example: &quot;The Arsenal&quot;.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="465" width="145" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
