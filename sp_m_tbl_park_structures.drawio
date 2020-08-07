@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-07T18:59:40.994Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="pzC3VDtWoL2zH3K556tw" version="13.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-07T19:01:31.934Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="KHeS-zbITgNcNR6QwWUa" version="13.6.1" type="github">
   <diagram id="_IFJutEF3Iz8n2r1wNuO" name="Page-1">
-    <mxGraphModel dx="2881" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2035" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -129,14 +129,20 @@
         <mxCell id="3YFnWvvlwwLfX2JDb95H-25" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-50" y="345" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="3YFnWvvlwwLfX2JDb95H-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3YFnWvvlwwLfX2JDb95H-27" target="3YFnWvvlwwLfX2JDb95H-30">
+        <mxCell id="3YFnWvvlwwLfX2JDb95H-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3YFnWvvlwwLfX2JDb95H-27" target="3YFnWvvlwwLfX2JDb95H-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3YFnWvvlwwLfX2JDb95H-27" value="Does the structure identifier exist in tbl_parks_structures(parks_id), but not&lt;br&gt;structures_evw (system)?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-280" y="315" width="190" height="90" as="geometry" />
         </mxCell>
         <mxCell id="3YFnWvvlwwLfX2JDb95H-30" value="Delete record from tbl_parks_structures&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="-255" y="460" width="140" height="60" as="geometry" />
+          <mxGeometry x="-255" y="505" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3YFnWvvlwwLfX2JDb95H-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3YFnWvvlwwLfX2JDb95H-32" target="3YFnWvvlwwLfX2JDb95H-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3YFnWvvlwwLfX2JDb95H-32" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-205" y="440" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
