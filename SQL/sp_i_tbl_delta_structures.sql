@@ -31,6 +31,7 @@ begin
 		if object_id('tempdb..#deltas') is not null
 			drop table #deltas;
 
+		/*Create the temporary table with the same exact schema as tbl_delta_structures.*/
 		create table #deltas(fid int identity(1,1) primary key,
 							 parks_id nvarchar(30),
 							 objectid int not null,
@@ -75,6 +76,7 @@ begin
 				   r.alteration_year,
 				   r.demolition_year,
 				   r.doitt_source,
+				   /*U = Update*/
 				   'U' as api_call,
 				   /*Check if the row_hash and shapes are (approximately for shape) equal*/
 				   case when l.row_hash = r.row_hash and dbo.fn_STFuzzyEquals(l.shape, r.shape, .000001) = 1 then 1
