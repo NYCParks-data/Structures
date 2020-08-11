@@ -7,7 +7,7 @@ import sys
 sys.path.append('../')
 from IPM_Shared_Code.Python.utils import get_config
 
-
+urllib3.disable_warnings()
 config = get_config('c:\Projects\config.ini')
 geo_key = config['keys']['geosupport_key']
 geo_ip = config['keys']['geosupport_ip']
@@ -24,7 +24,8 @@ out_keys = [
 
 def funcbn(bn=None, out_keys=None, grc_err=None,api_key=None,ip=None):
     
-    url = 'http://{}/geoservice/geoservice.svc/Function_BIN?BIN={}&key={}'.format(ip, bn, geo_key)
+    url = '{}/geoservice/geoservice.svc/Function_BIN?BIN={}&key={}'.format(ip, bn, geo_key)
+    # print(url)
     #Encode the url, but allow the characters specified in the safe argument.
     url = quote(url, safe = ':/?&=')
     
@@ -62,7 +63,7 @@ def funcbn(bn=None, out_keys=None, grc_err=None,api_key=None,ip=None):
 
 
 def func1b(borough=None, addressno=None, streetname=None, api_key=None, ip=None):
-    url = ('http://{}/geoservice/geoservice.svc/Function_1B?Borough={}&AddressNo={}&StreetName={}&key={}'.
+    url = ('{}/geoservice/geoservice.svc/Function_1B?Borough={}&AddressNo={}&StreetName={}&key={}'.
            format(ip, borough, addressno, streetname, geo_key))
     #Encode the url, but allow the characters specified in the safe argument.
     url = quote(url, safe = ':/?&=')
