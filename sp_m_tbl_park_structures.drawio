@@ -1,0 +1,177 @@
+<mxfile host="app.diagrams.net" modified="2020-08-08T00:41:13.336Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="u69n_5g0lwMrqR5F0QUc" version="13.6.1" type="github">
+  <diagram id="_IFJutEF3Iz8n2r1wNuO" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CAYcls5t_juTczSQUHOq-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="CAYcls5t_juTczSQUHOq-1" target="CAYcls5t_juTczSQUHOq-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CAYcls5t_juTczSQUHOq-1" target="CAYcls5t_juTczSQUHOq-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-1" value="Does the structure identifier match between ParksGIS structures_evw (system) and structuresdb tbl_parks_structures(parks_id)?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="250" y="375" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="CAYcls5t_juTczSQUHOq-2" target="CAYcls5t_juTczSQUHOq-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-2" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="485" y="400" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CAYcls5t_juTczSQUHOq-3" target="3YFnWvvlwwLfX2JDb95H-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-3" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="325" y="270" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="CAYcls5t_juTczSQUHOq-4" target="CAYcls5t_juTczSQUHOq-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="CAYcls5t_juTczSQUHOq-4" target="CAYcls5t_juTczSQUHOq-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-4" value="Are the attribute information or geometry different between structures_evw and tbl_parks_structures?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="560" y="375" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CAYcls5t_juTczSQUHOq-5" target="3YFnWvvlwwLfX2JDb95H-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-5" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="735" y="400" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="CAYcls5t_juTczSQUHOq-9" target="CAYcls5t_juTczSQUHOq-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-9" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="605" y="495" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CAYcls5t_juTczSQUHOq-12" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="575" y="565" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="3YFnWvvlwwLfX2JDb95H-1" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;tbl_parks_structures is a subset of ParksGIS structures_evw that includes the following columns:&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- objectid&lt;/i&gt;&lt;/div&gt;&lt;i&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- parks_id (SYSTEM)&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- bin&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- bbl&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- doitt_id&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- ground_elevation&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- height_roof&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- construction_year&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- alteration_year&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- demolition_year&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- doitt_source&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;-shape&lt;/i&gt;&lt;/div&gt;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="462.5" width="190" height="222.5" as="geometry" />
+        </mxCell>
+        <mxCell id="3YFnWvvlwwLfX2JDb95H-9" value="Update all of the column values for the record in tbl_parks_structures except for parks_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="685" y="480" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3YFnWvvlwwLfX2JDb95H-12" target="3YFnWvvlwwLfX2JDb95H-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3YFnWvvlwwLfX2JDb95H-12" target="RLk4m4bCmAAvBb6-imuW-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3YFnWvvlwwLfX2JDb95H-12" value="Does the structure identifier exist in structures_evw (system), but not tbl_parks_structures(parks_id)?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="410" y="245" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3YFnWvvlwwLfX2JDb95H-25" target="3YFnWvvlwwLfX2JDb95H-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3YFnWvvlwwLfX2JDb95H-25" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="485" y="180" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3YFnWvvlwwLfX2JDb95H-30" value="Delete record from tbl_parks_structures&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="435" y="82.5" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-8" value="Insert new record into tbl_parks_structures&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="615" y="165" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-13" target="RLk4m4bCmAAvBb6-imuW-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-13" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="665" y="270" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-24" target="RLk4m4bCmAAvBb6-imuW-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-24" target="RLk4m4bCmAAvBb6-imuW-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-24" value="Is the structure identifier unique and not null in structures_evw (system)?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="25" y="377.5" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-27" target="RLk4m4bCmAAvBb6-imuW-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-27" value="Insert new record into tbl_audit_structures&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- audit_step_id = 6&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="30" y="195" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-33" target="CAYcls5t_juTczSQUHOq-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-33" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="185" y="400" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-36" target="RLk4m4bCmAAvBb6-imuW-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-36" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="300" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-39" target="RLk4m4bCmAAvBb6-imuW-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="155" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-39" target="RLk4m4bCmAAvBb6-imuW-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="155" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-39" value="Is the structure identifier null?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="25" y="75" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-41" target="RLk4m4bCmAAvBb6-imuW-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-41" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="205" y="45" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-44" target="RLk4m4bCmAAvBb6-imuW-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-44" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="205" y="150" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-47" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="175" y="225" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-54" value="Insert new record into tbl_duplicate_review with:&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- parks_id&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- match_id = parks_id&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- id_source = &#39;parks&#39;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;notes = the description for audit_step_id 6&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="285" y="30" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="RLk4m4bCmAAvBb6-imuW-56" target="RLk4m4bCmAAvBb6-imuW-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-56" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="75" y="510" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-57" value="sp_m_tbl_parks_structures" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="545" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-59" value="&lt;b&gt;Start&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="65" y="575" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-60" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="735" y="540" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-61" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="665" y="145" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-62" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="485" y="62.5" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-63" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="335" y="10" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RLk4m4bCmAAvBb6-imuW-64" value="&lt;div&gt;&lt;i&gt;This stored procedure is scheduled to run once per week on Sunday.&lt;/i&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="10" y="600" width="160" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
