@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-12T19:48:17.712Z" agent="5.0 (Macintosh)" etag="puRZjf2yza4Py-ZqeZE-" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-12T20:15:06.183Z" agent="5.0 (Macintosh)" etag="pCh_MRpIptmqSVV94VHM" version="13.6.2" type="github">
   <diagram id="0EgTMZTeJb9qjf7vhucj" name="Page-1">
     <mxGraphModel dx="1141" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
         <mxCell id="Nd5n4c9dBPn-ezB6n79e-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nd5n4c9dBPn-ezB6n79e-10" target="Nd5n4c9dBPn-ezB6n79e-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nd5n4c9dBPn-ezB6n79e-10" value="Does geometry of the Parks structure associated with the doitt_id overlap with other Parks structures?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-10" value="Does geometry of the Parks structure associated with the doitt_id overlap with other Parks structures within tbl_parks_strcutures?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="20" y="110" width="160" height="90" as="geometry" />
         </mxCell>
         <mxCell id="Nd5n4c9dBPn-ezB6n79e-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Nd5n4c9dBPn-ezB6n79e-13">
@@ -57,6 +57,9 @@
         <mxCell id="Nd5n4c9dBPn-ezB6n79e-19" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="335" y="319" width="100" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nd5n4c9dBPn-ezB6n79e-20" target="Nd5n4c9dBPn-ezB6n79e-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Nd5n4c9dBPn-ezB6n79e-20" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="505" y="140" width="40" height="30" as="geometry" />
         </mxCell>
@@ -71,6 +74,41 @@
         </mxCell>
         <mxCell id="Nd5n4c9dBPn-ezB6n79e-23" value="&lt;font color=&quot;#FF0000&quot;&gt;DAN: COME BACK &lt;br&gt;TO THIS ONE&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="15" y="440" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nd5n4c9dBPn-ezB6n79e-25" target="Nd5n4c9dBPn-ezB6n79e-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nd5n4c9dBPn-ezB6n79e-25" target="Nd5n4c9dBPn-ezB6n79e-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-25" value="Did we already match this record based on doitt_id from tbl_parks_structures or tbl_doitt_structures in a previous step? " style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="590" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-27" value="Does the geometry of this record (from tbl_parks_structures) intersect with the geometry of a structure from tbl_doitt_structures?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="870" y="110" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-28" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="240" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nd5n4c9dBPn-ezB6n79e-29" target="Nd5n4c9dBPn-ezB6n79e-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-29" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="790" y="140" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-34" value="Technical clarification:&lt;br&gt;Does the column overlap_except have a value=0 for either tbl_parks_structures or tbl_doitt_structures?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="10" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="Nd5n4c9dBPn-ezB6n79e-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="270" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-36" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="620" y="319" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-37" value="An intersection is defined as a point, line, or curve common to two or more objects" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="10" width="200" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
