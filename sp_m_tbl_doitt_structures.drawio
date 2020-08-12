@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-11T19:45:30.404Z" agent="5.0 (Macintosh)" etag="n5WYmqhE8kKJnA0EzUDx" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-12T20:03:41.099Z" agent="5.0 (Macintosh)" etag="D-Ih4PUU5qYLj5IpH0Hu" version="13.6.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1141" dy="1889" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="sJDHbs98hqvbq1RDkTgL-3" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="300" y="-120" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NYlwoc8P-VWHH2dgp5Ao-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJDHbs98hqvbq1RDkTgL-4" target="sJDHbs98hqvbq1RDkTgL-8">
+        <mxCell id="NYlwoc8P-VWHH2dgp5Ao-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sJDHbs98hqvbq1RDkTgL-4" target="sJDHbs98hqvbq1RDkTgL-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sJDHbs98hqvbq1RDkTgL-4" value="sp_m_tbl_doitt_structures" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -116,7 +116,7 @@
           <mxGeometry x="245" y="690" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="sJDHbs98hqvbq1RDkTgL-47" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="615" y="535" width="40" height="20" as="geometry" />
+          <mxGeometry x="776" y="535" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="sJDHbs98hqvbq1RDkTgL-48" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="295" y="750" width="40" height="20" as="geometry" />
@@ -126,6 +126,18 @@
         </mxCell>
         <mxCell id="sJDHbs98hqvbq1RDkTgL-51" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;tbl_doitt_structures is a subset of InterimDB doitt_building that includes the following columns:&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;&lt;font color=&quot;#ff0000&quot;&gt;[DATA DICTIONARY LINK HERE]&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- BIN&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- base_bbl&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- mappluto_bbl&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- doitt_id&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- ground_elevation&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- height_roof&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- doitt_source&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- construction_year&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- alteration_year&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- demolition_year&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- last_status_type&lt;/i&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;i&gt;- shape&lt;/i&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="630" y="-80" width="277" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="RtRR98JLZfSOPhTD9HNb-0" value="Set the value of overlap_except=0 " style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="726" y="475" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RtRR98JLZfSOPhTD9HNb-1" value="A value of 0 in overlap_except is the default value, and it is always set to zero in this process." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="965" y="385" width="170" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="RtRR98JLZfSOPhTD9HNb-2" value="Set the value of overlap_except=0 " style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="980" y="205" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RtRR98JLZfSOPhTD9HNb-3" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1030" y="275" width="40" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
