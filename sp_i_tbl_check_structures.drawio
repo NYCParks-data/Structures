@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-13T21:34:21.757Z" agent="5.0 (Macintosh)" etag="lS5gPyrvvKBxZqsxy0rk" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-13T21:59:32.545Z" agent="5.0 (Macintosh)" etag="77pfMBu0wWaYCPLSu66I" version="13.6.2" type="github">
   <diagram id="0EgTMZTeJb9qjf7vhucj" name="Page-1">
     <mxGraphModel dx="1141" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -175,7 +175,7 @@
         <mxCell id="pUKq3BG7SP-DkA6TLIK8-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NzFgbJ0iktoW5-20C3Z2-3" target="pUKq3BG7SP-DkA6TLIK8-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NzFgbJ0iktoW5-20C3Z2-3" value="Does this record fall into one of the following types: one-to-many, many-to-one or many-to-many matches." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-3" value="Does this record fall into one of the following types: one-to-many, many-to-one, or many-to-many matches." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="865" y="900" width="210" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NzFgbJ0iktoW5-20C3Z2-5" value="&lt;i&gt;This means that the values of either count_parks_id or count_doitt_id are greater than 1&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -185,22 +185,22 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="NzFgbJ0iktoW5-20C3Z2-6" value="Is the value of count_parks_id greater than 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="705" y="1110" width="210" height="80" as="geometry" />
+          <mxGeometry x="720" y="1110" width="210" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NzFgbJ0iktoW5-20C3Z2-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NzFgbJ0iktoW5-20C3Z2-7" target="NzFgbJ0iktoW5-20C3Z2-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="NzFgbJ0iktoW5-20C3Z2-7" value="Is the value of count_doitt_id greater than 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="1010" y="1110" width="210" height="80" as="geometry" />
+          <mxGeometry x="1020" y="1110" width="210" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="NzFgbJ0iktoW5-20C3Z2-14" value="&lt;div&gt;Insert new record into tbl_audit_structures&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-14" value="&lt;div&gt;Insert new record into tbl_audit_structures along with value of 4 into audit_step_id&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="540" y="910" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NzFgbJ0iktoW5-20C3Z2-16" value="&lt;div&gt;Insert new record into tbl_audit_structures&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Insert value of &lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="740" y="1230" width="140" height="60" as="geometry" />
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-16" value="&lt;div&gt;Insert new record into tbl_audit_structures along with value of 7&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="755" y="1230" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NzFgbJ0iktoW5-20C3Z2-17" value="&lt;div&gt;Insert new record into tbl_audit_structures&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="1045" y="1230" width="140" height="60" as="geometry" />
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-17" value="&lt;div&gt;Insert new record into tbl_audit_structures along with value of 8&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1055" y="1230" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pUKq3BG7SP-DkA6TLIK8-1" value="This record is ready to be pushed into ParksGIS structures_evw from tbl_delta_structures." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="570" y="440" width="200" height="70" as="geometry" />
@@ -223,14 +223,29 @@
         <mxCell id="pUKq3BG7SP-DkA6TLIK8-7" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="750" y="925" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="pUKq3BG7SP-DkA6TLIK8-11" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="950" y="1030" width="40" height="30" as="geometry" />
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-11" target="NzFgbJ0iktoW5-20C3Z2-6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pUKq3BG7SP-DkA6TLIK8-12" value="One to many" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1240" y="1130" width="100" height="40" as="geometry" />
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-11" target="NzFgbJ0iktoW5-20C3Z2-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-11" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1020" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-12" value="One to Many" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1130" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="pUKq3BG7SP-DkA6TLIK8-13" value="Many to One" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="580" y="1130" width="100" height="40" as="geometry" />
+          <mxGeometry x="590" y="1130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-16" value="Is the value of count_parks_id greater than 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="445" y="1360" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-18" value="Insert a record into tbl_duplicate_review with:&lt;br&gt;&lt;div&gt;- parks_id&lt;/div&gt;&lt;div&gt;- match_id&lt;/div&gt;&lt;div&gt;- id_source&lt;/div&gt;&lt;div&gt;- notes&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1380" width="175" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-19" value="The notes column in tbl_duplicate_review are generated based on whether or not the record is 1-M/M-1/M-M " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="1380" width="240" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
