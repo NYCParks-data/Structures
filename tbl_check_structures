@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-19T16:03:36.964Z" agent="5.0 (Macintosh)" etag="FQvdAtONElmcBXmZ-Xyu" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-19T16:10:37.887Z" agent="5.0 (Macintosh)" etag="tsgnGHFLs9V2ESA4OkNc" version="13.6.2" type="github">
   <diagram id="AsGTHFOYwb-mfRRurfeF" name="Page-1">
-    <mxGraphModel dx="532" dy="313" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+    <mxGraphModel dx="1117" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -120,8 +120,14 @@
             <mxPoint x="730" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WI4QEi6b0jgkmCxcf_av-56" value="note: for this, geometry of &quot;tbl_check_structures&quot; is taken from tbl_doitt_structures" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0" vertex="1" parent="1">
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-56" value="note: for this, geometry of &quot;tbl_check_structures&quot; is taken from tbl_doitt_structures" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="90" y="50" width="600" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-57" value="unclear: further investigation needed" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="860" y="660" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-58" value="this may happen when Parks and DoITT are using the same doitt_id for " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="700" width="90" height="222.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
