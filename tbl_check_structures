@@ -1,17 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2020-08-19T15:12:44.332Z" agent="5.0 (Macintosh)" etag="TZ2z9Fj_-VPmSWsji77p" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-19T15:16:45.387Z" agent="5.0 (Macintosh)" etag="VQLqY1iJIBUwa9CGMOGn" version="13.6.2" type="github">
   <diagram id="AsGTHFOYwb-mfRRurfeF" name="Page-1">
     <mxGraphModel dx="603" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="WI4QEi6b0jgkmCxcf_av-1" value="Is the structure identifier null?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="20" y="160" width="130" height="75" as="geometry" />
+          <mxGeometry x="20" y="210" width="130" height="75" as="geometry" />
         </mxCell>
         <mxCell id="WI4QEi6b0jgkmCxcf_av-2" value="Insert new record into tbl_audit_structures&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;- audit_step_id = 6&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="30" y="300" width="120" height="60" as="geometry" />
+          <mxGeometry x="30" y="410" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WI4QEi6b0jgkmCxcf_av-3" value="tbl_check_structures" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="20" y="50" width="130" height="75" as="geometry" />
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-3" value="is the value for pct_parks_overlap_doitt 1.0?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="20" y="80" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-4" value="Start" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-5" value="pct_parks_overlap_doitt pct_doitt_overlap_parks" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="60" width="130" height="75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
