@@ -1,1 +1,292 @@
-<mxfile host="app.diagrams.net" modified="2020-08-19T14:54:11.455Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" version="13.6.1" etag="Z6-trkEx_rUu0V9broQi" type="github"><diagram id="yhjQ-BZBC9xmJLAxqM3Y">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-08-19T16:25:14.398Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="PRJtV5qdJ48TquQG5RQD" version="13.6.1" type="github">
+  <diagram id="yhjQ-BZBC9xmJLAxqM3Y" name="Page-1">
+    <mxGraphModel dx="950" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AfwoPEnTrvlJszo75pfS-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="70" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-7" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="90" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1165" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-124" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-9" target="AfwoPEnTrvlJszo75pfS-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-126" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-9" target="AfwoPEnTrvlJszo75pfS-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-9" value="Is the answer to any of these questions &quot;yes&quot;?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="387.75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-12" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="250" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-13" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="260" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="270" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="280" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-16" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="290" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-17" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-18" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="310" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="320" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-20" value="Insert a new record into tbl_compare_delta_parks" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="578.25" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-88" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-21" target="AfwoPEnTrvlJszo75pfS-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-21" value="Truncate existing data in tbl_compare_delta_parks" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="730" y="381.5" width="150" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-27" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-28" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-29" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-30" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-31" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-32" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-33" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-42" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="160" y="280" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-50" value="sp_i_tbl_compare_delta_parks" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-52" target="AfwoPEnTrvlJszo75pfS-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-52" target="AfwoPEnTrvlJszo75pfS-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-52" value="Is the structure identifier unique in structures_evw (system)?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="115" y="380" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-53" value="&lt;span&gt;Is the geometry different between structure_evw and tbl_delta_structures?&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1222" y="488.25" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-57" target="AfwoPEnTrvlJszo75pfS-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-57" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="397.5" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="AfwoPEnTrvlJszo75pfS-78">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="478" y="530" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-59" target="AfwoPEnTrvlJszo75pfS-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-59" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="137" y="490" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-65" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="397.5" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-66" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="438" y="490" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="417.41176470588243" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-67" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="397.5" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-70">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="478" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-70" target="AfwoPEnTrvlJszo75pfS-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-70" value="Is the structure identifier null in structures_evw (system)?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="413" y="380" width="130" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-72" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="127" y="570" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-78" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="428" y="571" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-83" target="AfwoPEnTrvlJszo75pfS-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-83" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="940" y="501" width="80" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="478" y="531" as="sourcePoint" />
+            <mxPoint x="478" y="571" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-87" target="AfwoPEnTrvlJszo75pfS-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-87" target="AfwoPEnTrvlJszo75pfS-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-87" value="Does the structure identifier exist in both Parks GIS structure_evw (system) and tbl_delta_structures (parks_id)?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="920" y="363" width="120" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-89" value="Is the attribute information different between structure_evw and tbl_delta_structures?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1222" y="257.25" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-90" value="&lt;span&gt;Are the values in the objectid column different between structure_evw and tbl_delta_structures?&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1222" y="373.25" width="130" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-93" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="930" y="570" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-96" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;fillColor=#FF0000;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1158" y="300.25" width="50" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-97" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1175" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-98" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1185" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-99" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1195" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-100" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1205" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-101" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1215" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-102" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1225" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-103" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="1470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-104" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1125" y="820" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-105" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="830" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-125" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-106" target="AfwoPEnTrvlJszo75pfS-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-106" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="397.5" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-107" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1225" y="820" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-108" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="830" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-128" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AfwoPEnTrvlJszo75pfS-109" target="AfwoPEnTrvlJszo75pfS-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-109" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="490" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-115" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="367.5" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-119" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;fillColor=#FF0000;gradientColor=none;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="1365" y="300.25" width="50" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-121" value="or" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1272" y="353.25" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-123" value="or" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1272" y="468.25" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-127" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Column pairs from both ParksGIS structures_evw and tbl_delta_structures are inserted into tbl_compare_delta_parks.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The columns below from tbl_delta_structures are prefixed with delta_ (e.g. &quot;delta_objectid&quot;) and columns from structures_evw are prefixed with gis_ (e.g. &quot;gis_objectid&quot;):&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- objectid&lt;/div&gt;&lt;div&gt;- parks_id (SYSTEM)&amp;nbsp;&lt;/div&gt;&lt;div&gt;- bin&lt;/div&gt;&lt;div&gt;- bbl&lt;/div&gt;&lt;div&gt;- doitt_id&lt;/div&gt;&lt;div&gt;- ground_elevation&lt;/div&gt;&lt;div&gt;- height_roof&lt;/div&gt;&lt;div&gt;- construction_year&lt;/div&gt;&lt;div&gt;- alteration_year&lt;/div&gt;&lt;div&gt;- demolition_year&lt;/div&gt;&lt;div&gt;- doitt_source&lt;/div&gt;&lt;div&gt;- shape&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="480" width="250" height="309" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-129" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="1430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-130" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="800" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-131" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-132" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="1460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-133" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="1470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-134" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="1480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-135" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1465" y="690" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-136" value="trg_i_tbl_compare_delta_parks" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1385" y="730" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-137" value="&lt;b&gt;Start&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="256" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AfwoPEnTrvlJszo75pfS-138" value="Insert a new record into tbl_check_structures" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="930" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
