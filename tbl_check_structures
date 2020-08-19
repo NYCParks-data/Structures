@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-19T15:25:02.214Z" agent="5.0 (Macintosh)" etag="UpWWAGOh5dSAtzlmaziT" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-19T15:29:35.969Z" agent="5.0 (Macintosh)" etag="Vv0UKzAu0w4RbvzJ-Mwp" version="13.6.2" type="github">
   <diagram id="AsGTHFOYwb-mfRRurfeF" name="Page-1">
     <mxGraphModel dx="758" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -17,16 +17,37 @@
           <mxGeometry x="220" y="80" width="180" height="75" as="geometry" />
         </mxCell>
         <mxCell id="WI4QEi6b0jgkmCxcf_av-7" value="&lt;div&gt;pct_parks_overlap_doitt &amp;lt; 1; AND &lt;br&gt;&lt;/div&gt;&lt;div&gt;pct_doitt_overlap_parks = 1&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="440" y="80" width="170" height="75" as="geometry" />
+          <mxGeometry x="425" y="80" width="170" height="75" as="geometry" />
         </mxCell>
         <mxCell id="WI4QEi6b0jgkmCxcf_av-8" value="&lt;div&gt;pct_parks_overlap_doitt &amp;lt; 1; AND &lt;br&gt;&lt;/div&gt;&lt;div&gt;pct_doitt_overlap_parks &amp;lt; 1&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="630" y="80" width="170" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="WI4QEi6b0jgkmCxcf_av-9" value="This means Parks geometry overlaps 100% with DoITT geometry AND DoITT geometry matches 100% with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="170" width="90" height="222.5" as="geometry" />
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-9" value="This means Parks geometry overlaps 100% with DoITT geometry AND DoITT geometry overlaps 100% with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="160" width="90" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="WI4QEi6b0jgkmCxcf_av-10" value="This means Parks geometry overlaps 100% with DoITT geometry AND DoITT geometry matches 100% with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="170" width="90" height="222.5" as="geometry" />
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-10" value="This means Parks geometry overlaps 100% with DoITT geometry BUT DoITT geometry overlaps partially (less than 100%) with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="80" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-14" value="This means Parks geometry overlaps partially (less than 100%) with DoITT geometry BUT DoITT geometry overlaps 100% with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="170" width="90" height="222.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-15" value="This means Parks geometry overlaps only partially (less than 100%) with DoITT geometry AND DoITT geometry overlaps only partially (less than 100%) with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="170" width="90" height="222.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-16" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="WI4QEi6b0jgkmCxcf_av-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="157" as="sourcePoint" />
+            <mxPoint x="105" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-17" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="155" as="sourcePoint" />
+            <mxPoint x="310" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-18" value="&lt;div&gt;pct_parks_overlap_doitt = 1; AND &lt;br&gt;&lt;/div&gt;&lt;div&gt;pct_doitt_overlap_parks = 1&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="20" y="420" width="170" height="75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
