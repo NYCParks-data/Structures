@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2020-08-19T15:29:35.969Z" agent="5.0 (Macintosh)" etag="Vv0UKzAu0w4RbvzJ-Mwp" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-19T15:36:19.019Z" agent="5.0 (Macintosh)" etag="5uZnPts2Ebfo-5rSRDxg" version="13.6.2" type="github">
   <diagram id="AsGTHFOYwb-mfRRurfeF" name="Page-1">
     <mxGraphModel dx="758" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="WI4QEi6b0jgkmCxcf_av-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="30" y="560" width="120" height="60" as="geometry" />
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-2" value="Change value in field &quot;validated&quot; to &quot;1&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="20" y="950" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="WI4QEi6b0jgkmCxcf_av-3" value="&lt;div&gt;pct_parks_overlap_doitt = 1; AND &lt;br&gt;&lt;/div&gt;&lt;div&gt;pct_doitt_overlap_parks = 1&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="20" y="80" width="170" height="75" as="geometry" />
@@ -46,8 +46,20 @@
             <mxPoint x="310" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WI4QEi6b0jgkmCxcf_av-18" value="&lt;div&gt;pct_parks_overlap_doitt = 1; AND &lt;br&gt;&lt;/div&gt;&lt;div&gt;pct_doitt_overlap_parks = 1&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="20" y="420" width="170" height="75" as="geometry" />
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WI4QEi6b0jgkmCxcf_av-18" target="WI4QEi6b0jgkmCxcf_av-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-18" value="&lt;div&gt;toggle: tbl_parks_structures and tlb_ doitt_structures: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;are they the same geometry?&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="50" y="420" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WI4QEi6b0jgkmCxcf_av-20" target="WI4QEi6b0jgkmCxcf_av-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-20" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="30" y="570" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-24" value="&lt;b&gt;Validate!&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#4C0099;" vertex="1" parent="1">
+          <mxGeometry x="90" y="860" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
