@@ -1,1 +1,90 @@
-<mxfile host="app.diagrams.net" modified="2020-08-20T18:36:04.718Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" version="13.6.1" etag="ADk4pR8IilmGka-P1nJb" type="github"><diagram id="JjXlm6RenTD7SI6704q5">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-08-20T18:59:29.129Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="IAItIbGmkfiCnnqsI0E2" version="13.6.1" type="github">
+  <diagram id="JjXlm6RenTD7SI6704q5" name="Page-1">
+    <mxGraphModel dx="950" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bV57CXJl7vwMXWLhmMP1-1" target="bV57CXJl7vwMXWLhmMP1-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bV57CXJl7vwMXWLhmMP1-1" target="bV57CXJl7vwMXWLhmMP1-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-1" value="Does the geometry of a Parks&#39; structure from tbl_parks_structures overlap another Parks&#39; structure?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="50" y="220" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-2" value="Insert new record into tbl_duplicate_review with the following values:&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;span&gt;- parks_id&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- match_id = parks_id of overlapping structure&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- id_source&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;- notes&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;" vertex="1" parent="1">
+          <mxGeometry x="600" y="195" width="120" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="95" y="130" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-5" value="&lt;a class=&quot;waffle-rich-text-link&quot; style=&quot;font-family: &amp;#34;roboto&amp;#34; , &amp;#34;robotodraft&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; font-size: 13px&quot;&gt;sp_i_tbl_duplicate_review&lt;/a&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="20" y="170" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bV57CXJl7vwMXWLhmMP1-8" target="bV57CXJl7vwMXWLhmMP1-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-8" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="255" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bV57CXJl7vwMXWLhmMP1-9" target="bV57CXJl7vwMXWLhmMP1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-9" value="No" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="360" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-11" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="65" y="420" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bV57CXJl7vwMXWLhmMP1-20" target="bV57CXJl7vwMXWLhmMP1-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bV57CXJl7vwMXWLhmMP1-20" target="bV57CXJl7vwMXWLhmMP1-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-20" value="Does the Parks&#39; structure have a different parks_id than the structure it overlaps?&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="310" y="220" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-22" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="905" y="225" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bV57CXJl7vwMXWLhmMP1-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-23" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="255" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-24" value="No" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="250" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-25" value="No" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="905" y="290" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="bV57CXJl7vwMXWLhmMP1-26" target="bV57CXJl7vwMXWLhmMP1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-26" value="No" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="360" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="560" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-35" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="540" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bV57CXJl7vwMXWLhmMP1-36" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="690" y="115" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
