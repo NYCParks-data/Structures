@@ -1,26 +1,26 @@
-<mxfile host="app.diagrams.net" modified="2020-08-27T20:13:14.740Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="jjt4Luti_mrzSttiiGJR" version="13.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-03T20:04:25.920Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="KULqW7Zl91KWBFsF7r_p" version="13.6.6" type="github">
   <diagram id="hUdBVl2sTiVrTUAv1wnK" name="Page-1">
-    <mxGraphModel dx="1663" dy="1554" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1515" dy="1513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-9" value="&lt;div style=&quot;box-sizing: border-box&quot;&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;This structure is a many Parks to many DoITT match.&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="940" y="160" width="120" height="60" as="geometry" />
+          <mxGeometry x="1020" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-10" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif&quot;&gt;One Parks structure matches multiple DoITT structures.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="800" y="160" width="120" height="60" as="geometry" />
+          <mxGeometry x="880" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-11" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif&quot;&gt;One DoITT structure match multiple Parks structures&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="660" y="160" width="130" height="60" as="geometry" />
+          <mxGeometry x="740" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-12" value="Start: tlb_duplicate_review contains records that are exceptions and includes records that are one-to-many, many-to-one, many-to-many, or a parks structure that overlaps other parks structures.&amp;nbsp;&lt;br&gt;&lt;br&gt;Changes need to be made in AMPS and/or GIS.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="60" y="-20" width="600" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-13" target="mh1nkUQ8I9AJPX4AYvUp-37">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-13" target="mh1nkUQ8I9AJPX4AYvUp-37" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-13" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;Parks structure overlapping another Parks structure&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="305" y="160" width="120" height="60" as="geometry" />
+          <mxGeometry x="715" y="160" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-15" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -39,10 +39,10 @@
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-19" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;Each result below may appear in the notes column in&amp;nbsp;&lt;span&gt;tbl_duplicate_review&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="10" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-23" target="Gdu_VGWDFXmtHtz_7FUW-27">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-23" target="Gdu_VGWDFXmtHtz_7FUW-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-23" target="Gdu_VGWDFXmtHtz_7FUW-28">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-23" target="Gdu_VGWDFXmtHtz_7FUW-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-23" value="Are the geometries for the duplicates the same?&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
@@ -62,10 +62,10 @@
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-28" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6C8EBF;" parent="1" vertex="1">
           <mxGeometry x="200" y="415" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-29" target="Gdu_VGWDFXmtHtz_7FUW-34">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-29" target="Gdu_VGWDFXmtHtz_7FUW-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-29" target="Gdu_VGWDFXmtHtz_7FUW-35">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-29" target="Gdu_VGWDFXmtHtz_7FUW-35" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-29" value="Is all the attribute information the same (e.g. are description and location the same)?&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
@@ -107,7 +107,7 @@
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-61" value="Record returns 0 matches in AMPS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="80" y="860" width="109" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-63" target="mh1nkUQ8I9AJPX4AYvUp-1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Gdu_VGWDFXmtHtz_7FUW-63" target="mh1nkUQ8I9AJPX4AYvUp-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-63" value="Record returns 1 or more matches in AMPS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
@@ -122,56 +122,140 @@
         <mxCell id="Gdu_VGWDFXmtHtz_7FUW-67" value="All systems that consume structure_evw will need to be checked." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-42.5" y="968.3" width="102.5" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-1" value="On which column(s) was/were the match(es) made?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-1" value="On which column(s) was/were the match(es) made?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="260" y="968.3" width="109" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="mh1nkUQ8I9AJPX4AYvUp-2" target="mh1nkUQ8I9AJPX4AYvUp-24">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="mh1nkUQ8I9AJPX4AYvUp-2" target="mh1nkUQ8I9AJPX4AYvUp-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-2" value="obj_gisobjid" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-2" value="obj_gisobjid" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="280" y="1088.3" width="69" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mh1nkUQ8I9AJPX4AYvUp-3" target="mh1nkUQ8I9AJPX4AYvUp-24">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mh1nkUQ8I9AJPX4AYvUp-3" target="mh1nkUQ8I9AJPX4AYvUp-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-3" value="obj_code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-3" value="obj_code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="420" y="1088.3" width="69" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mh1nkUQ8I9AJPX4AYvUp-18" target="mh1nkUQ8I9AJPX4AYvUp-20">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mh1nkUQ8I9AJPX4AYvUp-18" target="mh1nkUQ8I9AJPX4AYvUp-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-18" value="Both obj_gisobjid and obj_code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-18" value="Both obj_gisobjid and obj_code" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="140" y="1088.3" width="79" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-19" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-19" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" parent="1" vertex="1">
           <mxGeometry x="295.45" y="880.4799999999999" width="38.11" height="374.37" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-20" value="For unmatched records: &lt;br&gt;Investigate record in additional detail and consider&lt;br&gt;setting value of the gisobjids to &quot;NULL&quot; and create distinct values for the system column" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-20" value="For unmatched records: &lt;br&gt;Investigate record in additional detail and consider&lt;br&gt;setting value of the gisobjids to &quot;NULL&quot; and create distinct values for the system column" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="91" y="1170.8" width="109" height="147.5" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-24" value="Duplicates need to be investigated further and must be removed. It&#39;s more likely that changes need to be made in ParksGIS." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-24" value="Duplicates need to be investigated further and must be removed. It&#39;s more likely that changes need to be made in ParksGIS." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="360" y="1170.8" width="109" height="147.5" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-27" value="&lt;i&gt;Due to the complexity of these types of matches it&#39;s impossible to provide a prescriptive resolution. However, a resolution that removes duplicates must be implemented.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-27" value="&lt;i&gt;Due to the complexity of these types of matches it&#39;s impossible to provide a prescriptive resolution. However, a resolution that removes duplicates must be implemented.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="224.56" y="1170.8" width="109" height="169.2" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-32" value="&lt;b&gt;Start&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-32" value="&lt;b&gt;Start&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="326.7" y="30" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-34" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-34" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="125.5" y="1320" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-35" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-35" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="394.5" y="1318.3" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-36" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-36" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-280" y="660" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-37" value="Review at orthoimagery to determine the accuracy of the structure geometry" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="305" y="280" width="120" height="80" as="geometry" />
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-37" value="Verify whether all structures are currently in place via the following sources" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="715" y="280" width="120" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-39" value="Review the obj_status in AMPS and the featurestatus in ParksGIS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="305" y="400" width="120" height="80" as="geometry" />
+        <mxCell id="mh1nkUQ8I9AJPX4AYvUp-39" value="Review structures&#39; status in AMPS and ParksGIS to determine if strcutures are active." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="470" y="440" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-1" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;If we have structures overlap, we may need to create flag within GIS to address the issue&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="170" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-6" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="750" y="240" width="50" height="345" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-11" value="&lt;span style=&quot;text-align: left&quot;&gt;Review PIP photos in Parks Property Search to determine whether these structures are still being inspected&lt;/span&gt;&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="635" y="440" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-12" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Consult DoITT orthoimagery, pictometry, and Cyclomedia. Toggle between years to determine whether any of the structures have been removed over time.&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="800" y="440" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-13" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="750" y="460" width="50" height="345" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-15" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Consult DoITT building footprints and DoITT historic building footprints to&amp;nbsp;&lt;/div&gt;&lt;span style=&quot;text-align: left&quot;&gt;determine whether any of the structures have been removed over time.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="960" y="440" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="foZsXhXHTsE3H4CRtIyS-17" target="foZsXhXHTsE3H4CRtIyS-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="foZsXhXHTsE3H4CRtIyS-17" target="foZsXhXHTsE3H4CRtIyS-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-17" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Did any of these sources provide conclusive evidence?&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="715" y="670" width="120" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="foZsXhXHTsE3H4CRtIyS-18" target="foZsXhXHTsE3H4CRtIyS-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-18" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;No.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="880" y="720" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-21" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Site visit required.&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="970" y="670" width="120" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="foZsXhXHTsE3H4CRtIyS-23" target="foZsXhXHTsE3H4CRtIyS-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-23" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Yes.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="745" y="835" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-25" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Which dataset exhibited an inaccuracy?&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="715" y="908.3" width="120" height="71.7" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-27" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Are all structures currently in place?&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="830" width="120" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-29" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="750" y="890" width="50" height="254.85" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="foZsXhXHTsE3H4CRtIyS-30" target="foZsXhXHTsE3H4CRtIyS-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-30" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;ParksGIS&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1049.1" width="90" height="61.7" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="foZsXhXHTsE3H4CRtIyS-31" target="foZsXhXHTsE3H4CRtIyS-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-31" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;DoITT&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1049.1" width="90" height="61.7" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-32" value="&lt;div style=&quot;box-sizing: border-box&quot;&gt;Submit GIS change request&amp;nbsp;&lt;/div&gt;&lt;span&gt;to &lt;/span&gt;update geometry and remove overlap" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1153.7" width="90" height="76.3" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-33" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Submit CSCL request to update geometry&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1153.7" width="90" height="76.3" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="foZsXhXHTsE3H4CRtIyS-36" target="foZsXhXHTsE3H4CRtIyS-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-36" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Both&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1049.1" width="90" height="61.7" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-38" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1234.85" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-39" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="885" y="1234.85" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="foZsXhXHTsE3H4CRtIyS-41" value="&lt;span style=&quot;text-align: center&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;AMPS obj_status = D and ParksGIS&lt;/span&gt;&lt;div style=&quot;text-align: center ; box-sizing: border-box&quot;&gt;featurestatus = inactive&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: center ; box-sizing: border-box&quot;&gt;&amp;nbsp;are key indicators&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="333.56" y="440" width="120" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
