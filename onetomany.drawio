@@ -1,1 +1,190 @@
-<mxfile host="app.diagrams.net" modified="2020-10-08T17:40:27.587Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" version="13.7.4" etag="wpCVRxUzp5o5Xn-oomip" type="github"><diagram id="ZPSnRdFEcWR3bo13ULeO">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-10-08T18:48:25.040Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="vs-i92knDbfrC19vMDYt" version="13.7.4" type="github">
+  <diagram id="ZPSnRdFEcWR3bo13ULeO" name="Page-1">
+    <mxGraphModel dx="665" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NVncSVDIEuG2v-59I9_c-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-2" target="NVncSVDIEuG2v-59I9_c-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-2" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;Many Parks structures match one DoITT structure&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="715" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-3" value="Verify whether all structures are currently in place via the following sources" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="715" y="280" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-4" value="Review structures&#39; status in AMPS and ParksGIS to determine if structures are active." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="470" y="440" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-5" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="750" y="240" width="50" height="345" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-6" value="&lt;span style=&quot;text-align: left&quot;&gt;Review PIP photos in Parks Property Search to determine whether these structures are still being inspected&lt;/span&gt;&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="635" y="440" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-7" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Consult DoITT orthoimagery, pictometry, and Cyclomedia. Toggle between years to determine whether any of the structures have been removed over time.&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="800" y="440" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-8" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="750" y="460" width="50" height="345" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-9" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Consult DoITT building footprints and DoITT historic building footprints to&amp;nbsp;&lt;/div&gt;&lt;span style=&quot;text-align: left&quot;&gt;determine whether any of the structures have been removed over time.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="960" y="440" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-12" target="NVncSVDIEuG2v-59I9_c-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-12" target="NVncSVDIEuG2v-59I9_c-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-12" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Did any of these sources provide conclusive evidence?&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="715" y="670" width="120" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-14" target="NVncSVDIEuG2v-59I9_c-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-14" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;No.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="880" y="720" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-15" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Site visit required.&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="970" y="670" width="120" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-17" target="NVncSVDIEuG2v-59I9_c-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-17" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Yes.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="745" y="835" width="60" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-18" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Which dataset exhibited an inaccuracy?&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="715" y="908.3" width="120" height="71.7" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-19" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="750" y="890" width="50" height="254.85" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-21" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;ParksGIS&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1049.1" width="90" height="61.7" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-23" target="NVncSVDIEuG2v-59I9_c-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-23" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;DoITT&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1049.1" width="90" height="61.7" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-24" value="Assign new SystemIDs to the new multiple Parks structures and match to DoITT ID. Create dummy polygons for each Parks Structure&amp;nbsp;&lt;div style=&quot;box-sizing: border-box&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="747.5" y="1380" width="90" height="165.15" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-25" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Submit CSCL request to update geometry&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1153.7" width="90" height="76.3" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-27" target="NVncSVDIEuG2v-59I9_c-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-27" value="&lt;div style=&quot;text-align: left ; box-sizing: border-box&quot;&gt;Both&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1049.1" width="90" height="61.7" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-28" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1234.85" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-29" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="772.5" y="1560" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-30" value="&lt;span style=&quot;text-align: center&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center&quot;&gt;AMPS obj_status = D and ParksGIS&lt;/span&gt;&lt;div style=&quot;text-align: center ; box-sizing: border-box&quot;&gt;featurestatus = inactive&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: center ; box-sizing: border-box&quot;&gt;&amp;nbsp;are key indicators&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="333.56" y="440" width="120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-36" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1020.0000000000001" width="50" height="254.85" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-39" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;One Parks structure match multiple DoITT structures&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="570" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-40" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;Many Parks structures match multiple DoITT structures&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="860" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-41" target="NVncSVDIEuG2v-59I9_c-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-41" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;Many Parks structures should be replaced by one DoITT structure&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1180" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-42" target="NVncSVDIEuG2v-59I9_c-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-42" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;One Parks structure should be replaced by multiple DoITT structures&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="735" y="1180" width="115" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-43" target="NVncSVDIEuG2v-59I9_c-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-43" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;Many Parks structures should be replaced by multiple DoITT structures&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="980" y="1180" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-46" target="NVncSVDIEuG2v-59I9_c-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-46" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;Submit GIS change request&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="745" y="1280" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-49" value="From here, the script will grab hold of the SystemIDs (see diagram XXXX)&lt;div style=&quot;box-sizing: border-box&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1380" width="90" height="165.15" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-50" target="NVncSVDIEuG2v-59I9_c-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-50" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;Submit GIS change request&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1280" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-52" target="NVncSVDIEuG2v-59I9_c-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-52" value="Match SystemID for one Parks Structure with DoITT ID. SOMEHOW MAKE OTHER STRUCTURES GO AWAY DAN?????&amp;nbsp;&lt;div style=&quot;box-sizing: border-box&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1380" width="90" height="165.15" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-54" value="Associate all Works Orders booked to each structure to remaining Structure.&amp;nbsp;&amp;nbsp;&lt;div style=&quot;box-sizing: border-box&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1580" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-57" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="895" y="1700" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-58" target="NVncSVDIEuG2v-59I9_c-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-58" value="&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 14px&quot;&gt;&lt;div style=&quot;box-sizing: border-box ; font-family: &amp;#34;segoe ui&amp;#34; , , &amp;#34;apple color emoji&amp;#34; , &amp;#34;segoe ui emoji&amp;#34; , sans-serif ; font-size: 12px&quot;&gt;Submit GIS change request&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="982.5" y="1280" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-60" target="NVncSVDIEuG2v-59I9_c-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-60" target="NVncSVDIEuG2v-59I9_c-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-60" value="Review each Parks Structure to determine if and which polygons and DoITT IDs they should correspond to" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="982.5" y="1380" width="90" height="165.15" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-62" value="Assign new SystemIDs to the new multiple Parks structures and match to DoITT ID. Create dummy polygons for each Parks Structure&amp;nbsp;&lt;div style=&quot;box-sizing: border-box&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="982.5" y="1670" width="90" height="165.15" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-64" target="NVncSVDIEuG2v-59I9_c-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-64" value="Do we need to remove Structures?&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="1432.58" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-65" target="NVncSVDIEuG2v-59I9_c-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-65" value="Do we need to add Structures?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="981.25" y="1580" width="92.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-68" value="Match SystemID for one Parks Structure with DoITT ID. SOMEHOW MAKE OTHER STRUCTURES GO AWAY DAN?????&amp;nbsp;&lt;div style=&quot;box-sizing: border-box&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1380" width="90" height="165.15" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-71" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1007.5" y="1840" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-72" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1275" y="1550" width="40" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
