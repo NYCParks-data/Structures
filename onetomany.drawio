@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-08T18:48:25.040Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="vs-i92knDbfrC19vMDYt" version="13.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-08T18:53:18.143Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36" etag="zS25tEmuBV_qJS91GjBO" version="13.7.4" type="github">
   <diagram id="ZPSnRdFEcWR3bo13ULeO" name="Page-1">
     <mxGraphModel dx="665" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -175,6 +175,9 @@
         <mxCell id="NVncSVDIEuG2v-59I9_c-65" value="Do we need to add Structures?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="981.25" y="1580" width="92.5" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NVncSVDIEuG2v-59I9_c-68" target="NVncSVDIEuG2v-59I9_c-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="NVncSVDIEuG2v-59I9_c-68" value="Match SystemID for one Parks Structure with DoITT ID. SOMEHOW MAKE OTHER STRUCTURES GO AWAY DAN?????&amp;nbsp;&lt;div style=&quot;box-sizing: border-box&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
           <mxGeometry x="1250" y="1380" width="90" height="165.15" as="geometry" />
         </mxCell>
@@ -183,6 +186,12 @@
         </mxCell>
         <mxCell id="NVncSVDIEuG2v-59I9_c-72" value="&lt;b&gt;End&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1275" y="1550" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-73" value="Associate all Works Orders booked to each structure to remaining Structure.&amp;nbsp;&amp;nbsp;&lt;div style=&quot;box-sizing: border-box&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="1412.58" width="90" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NVncSVDIEuG2v-59I9_c-75" value="How does the script ensure that we don&#39;t keep reviewing the structures in questions over and over?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="453.56" y="1153.7" width="120" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
