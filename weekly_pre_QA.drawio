@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net" modified="2020-08-25T17:11:17.303Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36" etag="YIPSh9KbntDXWxzg1hqJ" version="13.6.5" type="github">
+  <diagram id="3Duwv0FjU3i23YqvvfnH" name="Page-1">
+    <mxGraphModel dx="2272" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pOX4EQvong9DDcxd3Ake-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-1" target="pOX4EQvong9DDcxd3Ake-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-1" value="Select records from tbl_delta_structures into a pandas dataframe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="170" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-2" target="pOX4EQvong9DDcxd3Ake-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-2" value="Rename columns in dataframe to match what is in ParksGIS structure_evw" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="350" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-4" target="pOX4EQvong9DDcxd3Ake-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-4" target="pOX4EQvong9DDcxd3Ake-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-4" value="Does the dataframe contain any geometries that are multipolygon?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="540" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-6" target="pOX4EQvong9DDcxd3Ake-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-6" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="720" y="155" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-9" target="pOX4EQvong9DDcxd3Ake-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-9" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="570" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-11" target="pOX4EQvong9DDcxd3Ake-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-11" value="Send email notification that multipolygons were identified" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="840" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-13" target="pOX4EQvong9DDcxd3Ake-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-13" value="Filter dataframe to remove any multipolygons" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="840" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-15" value="&lt;i&gt;The email includes the structure identifiers for those that have multipolygon geometry&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="980" y="110" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-16" value="&lt;i&gt;Multipolygons need to be excluded at this point in time due to a major bug with the ArcGIS python API that truncates WKT&amp;nbsp; representation of multipolygons to only include the first polygon.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="30" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pOX4EQvong9DDcxd3Ake-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-17" value="Write the pandas dataframe to a geojson file in a timestamped directory" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="540" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pOX4EQvong9DDcxd3Ake-23" target="pOX4EQvong9DDcxd3Ake-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pOX4EQvong9DDcxd3Ake-23" target="pOX4EQvong9DDcxd3Ake-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-23" value="Does tbl_delta_structures in structuresdb contain any records?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pOX4EQvong9DDcxd3Ake-24" target="pOX4EQvong9DDcxd3Ake-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-24" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="70" y="155" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-25" target="pOX4EQvong9DDcxd3Ake-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-25" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-70" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pOX4EQvong9DDcxd3Ake-30" target="pOX4EQvong9DDcxd3Ake-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-30" value="Read a geojson file into a geojson object (in memory)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="540" y="440" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pOX4EQvong9DDcxd3Ake-31" target="pOX4EQvong9DDcxd3Ake-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-31" value="Create an arcgis featureset from the geojson object" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="540" y="560" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-33" value="&lt;i&gt;This step requires the installation and import of the arcgis python library. This step does not require a license.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="555" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-34" target="pOX4EQvong9DDcxd3Ake-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-34" value="Connect to the Web Service (portal) using the appropriate credentials and url" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="540" y="690" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-36" value="&lt;i&gt;This step requires the installation and import of the arcgis python library. This step DOES require a license because ESRI is an evil corporation.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="680" y="677.5" width="150" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-37" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="585" y="820" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pOX4EQvong9DDcxd3Ake-38" target="pOX4EQvong9DDcxd3Ake-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-38" value="sp_i_tbl_delta_structures_archive" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="500" y="854" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-44" target="pOX4EQvong9DDcxd3Ake-50" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-44" value="Using the connection established to the Web Service, create a structures feature layer&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="530" y="930" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-46" value="&lt;b&gt;Start&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="120" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="pOX4EQvong9DDcxd3Ake-47" target="pOX4EQvong9DDcxd3Ake-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-47" value="Call the Geosupport function" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="930" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-49" value="&lt;i&gt;Consult the Geosupport diagram f&lt;/i&gt;&lt;i&gt;or additional detail on this process.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-310" y="925" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-50" target="pOX4EQvong9DDcxd3Ake-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-50" value="Edit the structures in the feature layer using the structures featureset&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="330" y="930" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-51" value="&lt;i&gt;Consult diagram &lt;font color=&quot;#ff3333&quot;&gt;XX&lt;/font&gt; f&lt;/i&gt;&lt;i&gt;or more detail on this stored procedure,&amp;nbsp;&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="839" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="pOX4EQvong9DDcxd3Ake-55" target="pOX4EQvong9DDcxd3Ake-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-55" value="Send email notification specifying success or failure and the number of updates (including 0) that were made" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="120" y="930" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pOX4EQvong9DDcxd3Ake-61" value="Create an arcgis featureset for the structures from the geojson object" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="540" y="560" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0S8mq6I-XpXNYiwVCgaO-1" value="&lt;i&gt;The tbl_delta_structures table contains only structures that require updates to be made and may often times contain no records.&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="112.5" width="120" height="115" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

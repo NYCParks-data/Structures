@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" modified="2020-08-20T19:49:28.716Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="1ERIn7Pww_QrLgvtyglu" version="13.6.1" type="github">
+  <diagram id="AsGTHFOYwb-mfRRurfeF" name="Page-1">
+    <mxGraphModel dx="1797" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-2" value="Change value in field &quot;validated&quot; to &quot;1&quot;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="225" y="980" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-3" value="&lt;div&gt;pct_parks_overlap_doitt = 1; AND &lt;br&gt;&lt;/div&gt;&lt;div&gt;pct_doitt_overlap_parks = 1&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="20" y="80" width="170" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-4" value="Start: What are the values of pct_parks_overlap_doitt &amp;amp; pct_doitt_overlap_parks?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="90" y="30" width="600" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-6" value="&lt;div&gt;pct_parks_overlap_doitt = 1; AND &lt;br&gt;&lt;/div&gt;&lt;div&gt;pct_doitt_overlap_parks &amp;lt; 1.0&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="220" y="80" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-7" value="&lt;div&gt;pct_parks_overlap_doitt &amp;lt; 1; AND &lt;br&gt;&lt;/div&gt;&lt;div&gt;pct_doitt_overlap_parks = 1&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="425" y="80" width="170" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-8" value="&lt;div&gt;pct_parks_overlap_doitt &amp;lt; 1; AND &lt;br&gt;&lt;/div&gt;&lt;div&gt;pct_doitt_overlap_parks &amp;lt; 1&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="630" y="80" width="170" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-9" value="This means Parks geometry overlaps 100% with DoITT geometry AND DoITT geometry overlaps 100% with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="160" width="90" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-10" value="This means Parks geometry overlaps 100% with DoITT geometry BUT DoITT geometry overlaps partially (less than 100%) with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="160" width="80" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-14" value="This means Parks geometry overlaps partially (less than 100%) with DoITT geometry BUT DoITT geometry overlaps 100% with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="420" y="160" width="85" height="222.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-15" value="This means Parks geometry overlaps only partially (less than 100%) with DoITT geometry AND DoITT geometry overlaps only partially (less than 100%) with Parks geometry" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="160" width="90" height="222.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-16" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="WI4QEi6b0jgkmCxcf_av-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="157" as="sourcePoint" />
+            <mxPoint x="105" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-17" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" target="WI4QEi6b0jgkmCxcf_av-33" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="155" as="sourcePoint" />
+            <mxPoint x="330" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="WI4QEi6b0jgkmCxcf_av-18" target="WI4QEi6b0jgkmCxcf_av-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-18" value="&lt;div&gt;toggle: tbl_parks_structures and tlb_ doitt_structures: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;are they the same geometry?&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="20" y="420" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="WI4QEi6b0jgkmCxcf_av-20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="930" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="50" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-20" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="30" y="570" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-24" value="&lt;b&gt;Validate!&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#4C0099;" parent="1" vertex="1">
+          <mxGeometry x="290" y="890" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-29" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="100" y="570" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.457;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="WI4QEi6b0jgkmCxcf_av-33" target="WI4QEi6b0jgkmCxcf_av-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="WI4QEi6b0jgkmCxcf_av-33" target="WI4QEi6b0jgkmCxcf_av-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-33" value="&lt;div&gt;toggle: tbl_parks_structures and tlb_ doitt_structures: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;compare polygons to ortho photo: which geometry more closely resembles building in ortho?&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="310" y="440" width="490" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-35" value="tbl_parks_structures" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="440" y="660" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-37" value="tbl_doitt_structures" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="220" y="660" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-41" value="neither (both are wrong)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="645" y="660" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-46" value="" style="endArrow=classic;html=1;exitX=0.658;exitY=1.1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="WI4QEi6b0jgkmCxcf_av-37" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="750" as="sourcePoint" />
+            <mxPoint x="300" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-47" value="" style="endArrow=classic;html=1;exitX=0.586;exitY=0.967;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="WI4QEi6b0jgkmCxcf_av-35" target="WI4QEi6b0jgkmCxcf_av-49" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="474.48" y="690" as="sourcePoint" />
+            <mxPoint x="540" y="877" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-48" value="" style="endArrow=classic;html=1;exitX=0.386;exitY=1.067;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.894;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="WI4QEi6b0jgkmCxcf_av-41" target="WI4QEi6b0jgkmCxcf_av-49" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="700" y="700" as="sourcePoint" />
+            <mxPoint x="701.04" y="887" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-49" value="Send Parks structure_id, doitt_id, and geometry recommendation to CSCL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="450" y="880" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-52" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="155" as="sourcePoint" />
+            <mxPoint x="530" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-53" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="155" as="sourcePoint" />
+            <mxPoint x="730" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-56" value="note: for this, geometry of &quot;tbl_check_structures&quot; is taken from tbl_doitt_structures" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="90" y="50" width="600" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-57" value="unclear: further investigation needed" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="980" y="650" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WI4QEi6b0jgkmCxcf_av-58" value="this may happen when Parks and DoITT are using the same doitt_id for " style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="980" y="690" width="90" height="222.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

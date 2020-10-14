@@ -1,0 +1,301 @@
+<mxfile host="app.diagrams.net" modified="2020-08-13T22:20:24.602Z" agent="5.0 (Macintosh)" etag="GLtsc-_F4IfZyGadqCPM" version="13.6.2" type="github">
+  <diagram id="0EgTMZTeJb9qjf7vhucj" name="Page-1">
+    <mxGraphModel dx="2852" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-1" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="85" y="10" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-2" target="Nd5n4c9dBPn-ezB6n79e-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-2" value="sp_i_tbl_check_structures" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="25" y="50" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-21" target="Nd5n4c9dBPn-ezB6n79e-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-8" target="Nd5n4c9dBPn-ezB6n79e-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-8" value="Did the record associated with this doitt_id in tbl_parks_structures have an unexpected change &lt;font color=&quot;#FF0000&quot;&gt;[INSERT LINK TO WIKI HERE]&lt;/font&gt;?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="305" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-10" target="Nd5n4c9dBPn-ezB6n79e-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-10" value="Does geometry of the Parks structure associated with the doitt_id overlap with other Parks structures within tbl_parks_strcutures?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="20" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="Nd5n4c9dBPn-ezB6n79e-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-13" target="Nd5n4c9dBPn-ezB6n79e-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-13" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="80" y="240" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-14" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="50" y="319" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-16" target="Nd5n4c9dBPn-ezB6n79e-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-16" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="225" y="140" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-17" value="&lt;font color=&quot;#FF0000&quot;&gt;also define what &quot;unexpected change&quot;&amp;nbsp; is&lt;br&gt;[DOCUMENT LATER AFTER &lt;br&gt;sp_i_tbl_compare_delta_parks]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="440" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-21" target="Nd5n4c9dBPn-ezB6n79e-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-19" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="335" y="319" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-20" target="Nd5n4c9dBPn-ezB6n79e-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-20" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="505" y="140" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-21" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="365" y="240" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-8" target="Nd5n4c9dBPn-ezB6n79e-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="200" as="sourcePoint" />
+            <mxPoint x="385" y="319" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-23" value="&lt;font color=&quot;#FF0000&quot;&gt;DAN: COME BACK &lt;br&gt;TO THIS ONE&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="15" y="440" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-25" target="Nd5n4c9dBPn-ezB6n79e-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-25" target="Nd5n4c9dBPn-ezB6n79e-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-25" value="Did we already match this record based on doitt_id from tbl_parks_structures or tbl_doitt_structures in a previous step? " style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="590" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-27" target="Nd5n4c9dBPn-ezB6n79e-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nd5n4c9dBPn-ezB6n79e-27" target="pUKq3BG7SP-DkA6TLIK8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-27" value="Does the geometry of this record (from tbl_parks_structures) intersect with the geometry of a structure from tbl_doitt_structures?" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="870" y="110" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-28" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="650" y="240" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-29" target="Nd5n4c9dBPn-ezB6n79e-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-29" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="790" y="140" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-34" value="Technical clarification:&lt;br&gt;Does the column overlap_except have a value=0 for either tbl_parks_structures or tbl_doitt_structures?" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="10" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="Nd5n4c9dBPn-ezB6n79e-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="270" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-36" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="620" y="319" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-37" value="An intersection is defined as a point, line, or curve common to two or more objects" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="870" y="10" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-38" target="Nd5n4c9dBPn-ezB6n79e-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-38" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="950" y="240" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YigfGF3NO3no1JIuhpCH-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-40" target="YigfGF3NO3no1JIuhpCH-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-40" value="&lt;div&gt;Insert new record into tbl_check_structures&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="900" y="700" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YigfGF3NO3no1JIuhpCH-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-41" target="YigfGF3NO3no1JIuhpCH-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-41" value="&lt;div&gt;Calculate the how much (in percentage) the geometry from tbl_parks_structures intersect with the geometry from tbl_doitt_structures&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="865" y="430" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Nd5n4c9dBPn-ezB6n79e-42" target="Nd5n4c9dBPn-ezB6n79e-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-42" value="&lt;div&gt;Determine the area of the Parks structure covered by the intersection area and determine the area of the DoITT structure that is covered by the intersection area.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="865" y="304" width="210" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-44" value="&lt;div&gt;This is to create additional attributes that will help guide human validation.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#FF0000&quot;&gt;See example in [DIAGRAM HERE]&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="304" width="200" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="Nd5n4c9dBPn-ezB6n79e-48" value="&lt;i&gt;Insert values for percentages of intersection into pct_parks_overlaps_doitt and pct_doitt_overlaps_parks&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="440" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YigfGF3NO3no1JIuhpCH-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YigfGF3NO3no1JIuhpCH-1" target="Nd5n4c9dBPn-ezB6n79e-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YigfGF3NO3no1JIuhpCH-1" value="&lt;div&gt;Determine whether the matched records are one-to-many, many-to-one or many-to-many matches.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="865" y="565" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YigfGF3NO3no1JIuhpCH-5" value="&lt;div&gt;&lt;i&gt;The column validated is set to the default value of 0.&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;This column is used to denote review status. After human review, the value is changed to 1 and is pushed into tbl_delta_structures.&lt;br&gt;&lt;/i&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="685" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YigfGF3NO3no1JIuhpCH-7" value="This is a measure of how many times does the doitt_id and parks_id appear in the results of the intersect structures.&lt;i&gt;&lt;br&gt;&lt;br&gt;Insert values for the counts into count_parks_id and count_doitt_id&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="565" width="350" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YigfGF3NO3no1JIuhpCH-11" target="NzFgbJ0iktoW5-20C3Z2-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YigfGF3NO3no1JIuhpCH-11" value="trg_i_tbl_check_structures" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="895" y="825" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YigfGF3NO3no1JIuhpCH-12" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="955" y="790" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NzFgbJ0iktoW5-20C3Z2-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NzFgbJ0iktoW5-20C3Z2-3" target="pUKq3BG7SP-DkA6TLIK8-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-3" value="Does this record fall into one of the following types: one-to-many, many-to-one, or many-to-many matches." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="865" y="900" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-5" value="&lt;i&gt;This means that the values of either count_parks_id or count_doitt_id are greater than 1&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1100" y="910" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NzFgbJ0iktoW5-20C3Z2-6" target="NzFgbJ0iktoW5-20C3Z2-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-6" value="Is the value of count_parks_id greater than 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="720" y="1110" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="NzFgbJ0iktoW5-20C3Z2-7" target="NzFgbJ0iktoW5-20C3Z2-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-7" value="Is the value of count_doitt_id greater than 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="1110" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-14" value="&lt;div&gt;Insert new record into tbl_audit_structures along with value of 4 into audit_step_id&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="540" y="910" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NzFgbJ0iktoW5-20C3Z2-16" target="pUKq3BG7SP-DkA6TLIK8-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-16" value="&lt;div&gt;Insert new record into tbl_audit_structures along with value of 7&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="755" y="1230" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NzFgbJ0iktoW5-20C3Z2-17" target="pUKq3BG7SP-DkA6TLIK8-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NzFgbJ0iktoW5-20C3Z2-17" value="&lt;div&gt;Insert new record into tbl_audit_structures along with value of 8&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1055" y="1230" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-1" value="This record is ready to be pushed into ParksGIS structures_evw from tbl_delta_structures." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="440" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-2" target="pUKq3BG7SP-DkA6TLIK8-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-2" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="140" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-4" target="pUKq3BG7SP-DkA6TLIK8-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-4" value="Submit a CSCL ticket" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="120" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-7" target="NzFgbJ0iktoW5-20C3Z2-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-7" value="No" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="750" y="925" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-11" target="NzFgbJ0iktoW5-20C3Z2-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-11" target="NzFgbJ0iktoW5-20C3Z2-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-11" value="Yes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1020" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-12" value="One to Many" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-13" value="Many to One" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1130" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-18" target="pUKq3BG7SP-DkA6TLIK8-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-18" value="Insert a record into tbl_duplicate_review with:&lt;br&gt;&lt;div&gt;- parks_id&lt;/div&gt;&lt;div&gt;- match_id&lt;/div&gt;&lt;div&gt;- id_source&lt;/div&gt;&lt;div&gt;- notes&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;" vertex="1" parent="1">
+          <mxGeometry x="882.5" y="1470" width="175" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-19" value="Notes column: The descriptions of the 1-M/M-1/M-M is stored here&lt;br&gt;&lt;br&gt;match_id: the doitt_id for the one or many Parks structures it matched on" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="1470" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-20" value="Select the corresponding description of 7 in audit_step_id from tbl_ref_audit_step " style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1350" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-21" target="pUKq3BG7SP-DkA6TLIK8-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-21" value="Generate description for many-to-many matches " style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1350" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-22" value="&lt;div&gt;Select the corresponding description of 8 in audit_step_id from tbl_ref_audit_step &lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="1350" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-25" value="" style="endArrow=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-21" target="pUKq3BG7SP-DkA6TLIK8-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="910" y="1370" as="sourcePoint" />
+            <mxPoint x="960" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-26" value="" style="endArrow=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-22" target="pUKq3BG7SP-DkA6TLIK8-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1115" y="1379.6" as="sourcePoint" />
+            <mxPoint x="1050" y="1379.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pUKq3BG7SP-DkA6TLIK8-29" target="pUKq3BG7SP-DkA6TLIK8-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-29" value="&lt;div align=&quot;center&quot;&gt;Delete duplicate records from tbl_check_structures&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;" vertex="1" parent="1">
+          <mxGeometry x="882.5" y="1590" width="175" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-30" value="&lt;div align=&quot;center&quot;&gt;Delete duplicate records from tbl_delta_structures&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;" vertex="1" parent="1">
+          <mxGeometry x="882.5" y="1670" width="175" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-31" value="&lt;font color=&quot;#FF0000&quot;&gt;DAN COME BACK&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="1675" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-36" value="End" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="950" y="1730" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="pUKq3BG7SP-DkA6TLIK8-37" value="No Transaction Required" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.octagon2;align=center;verticalAlign=middle;dx=15;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="105" width="100" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

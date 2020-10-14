@@ -111,24 +111,26 @@ create or alter procedure dbo.sp_m_tbl_doitt_structures as
 						construction_year,
 						alteration_year,
 						null as demolition_year,
+						/*Calculate the row hash for each record for comparison.*/
 						hashbytes('SHA2_256', concat_ws('|',bin, base_bbl, doitt_id, ground_elevation, height_roof, construction_year, alteration_year, demolition_year, doitt_source)) as row_hash,
 						doitt_source,
 						last_status_type,
 						shape
 				into #current_historic
+				/*Use openquery to bring over doitt_building because it cannot be pulled directly with a geometry column.*/
 				from openquery([dataparks], 'select bin,
-																   base_bbl,
-															       mappluto_bbl,
-															       doitt_id,
-															       ground_elevation,
-															       height_roof,
-																   ''current'' as doitt_source, 
-																   case when construction_year > year(getdate()) then null else construction_year end as construction_year,
-																   case when alteration_year > year(getdate()) then null else alteration_year end as alteration_year,
-																   cast(null as smallint) as demolition_year,
-																   null as last_status_type,
-																   shape
-															from interimdb.dbo.doitt_building where doitt_id is not null')
+													base_bbl,
+													mappluto_bbl,
+													doitt_id,
+													ground_elevation,
+													height_roof,
+													''current'' as doitt_source, 
+													case when construction_year > year(getdate()) then null else construction_year end as construction_year,
+													case when alteration_year > year(getdate()) then null else alteration_year end as alteration_year,
+													cast(null as smallint) as demolition_year,
+													null as last_status_type,
+													shape
+											from interimdb.dbo.doitt_building where doitt_id is not null')
 				/*union all
 				select bin,
 				       base_bbl,
@@ -155,8 +157,11 @@ create or alter procedure dbo.sp_m_tbl_doitt_structures as
 					drop table #historic_final;*/
 		begin try
 			begin transaction;
+				/*Perform a merge between tbl_doitt_structures and the source doitt_buildings based on doitt_id */
 				merge structuresdb.dbo.tbl_doitt_structures as tgt using #current_historic as src
 					on tgt.doitt_id = src.doitt_id
+					/*For records that match on doitt_id and have differences in the geometry or attributes then perform an update
+					  to the records in tbl_doitt_structures*/
 					when matched and tgt.row_hash != src.row_hash or tgt.shape.STEquals(src.shape) != 1 then 
 						update set tgt.bin = src.bin,
 								   tgt.base_bbl = src.base_bbl,
@@ -166,17 +171,17 @@ create or alter procedure dbo.sp_m_tbl_doitt_structures as
 								   tgt.construction_year = src.construction_year,
 								   tgt.alteration_year = src.alteration_year,
 								   tgt.demolition_year = src.demolition_year,
-								   --tgt.row_hash = src.row_hash,
 								   tgt.doitt_source = src.doitt_source,
 								   --tgt.last_status_type = src.last_status_type,
 								   tgt.shape = src.shape
+					/*If the records exist in doitt_building, but not in tbl_doitt_structures then insert the records from tbl_doitt_structures.*/
 					when not matched by target
 						then insert (bin, base_bbl, mappluto_bbl, doitt_id, ground_elevation, height_roof, construction_year,
 									 alteration_year, demolition_year, doitt_source, last_status_type, shape)
 
 								 values(src.bin, src.base_bbl, src.mappluto_bbl, src.doitt_id, src.ground_elevation, src.height_roof, 
 										src.construction_year, src.alteration_year, src.demolition_year, src.doitt_source, src.last_status_type, src.shape)
-
+					/*If the records exist in tbl_doitt_structures, but not in doitt_building then delete the records from tbl_doitt_structures.*/
 					when not matched by source
 						then delete;
 								

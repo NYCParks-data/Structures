@@ -30,6 +30,7 @@ create or alter trigger dbo.trg_i_tbl_duplicate_review
 	on structuresdb.dbo.tbl_duplicate_review
 	for insert as
 	begin
+		/*If the inserted record originates from tbl_check_structures then delete it.*/
 		begin transaction
 			delete l
 			from structuresdb.dbo.tbl_check_structures as l
