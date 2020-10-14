@@ -58,5 +58,6 @@ create table structuresdb.dbo.tbl_geosupport_address (BIN int not null, --foreig
 											  Sanitation_Subsect varchar(4), 
 											  Sanitation_District varchar(4), 
 											  Sanitation_Recycling varchar(4), 
-											  Sanitation_Reg_Pickup varchar(5));
+											  Sanitation_Reg_Pickup varchar(5),
+											  Address_ID int);
 

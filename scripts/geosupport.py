@@ -18,7 +18,7 @@ grc_err = ['01/F', '20', '21', '22', '23']
 out_keys = [
     'AddressRangeList', 'out_bbl', 'out_TPAD_bin', 'out_TPAD_bin_status',
     'out_TPAD_conflict_flag', 'out_error_message', 'out_grc',
-    'out_sanborn_boro', 'in_bin', 'out_bbl_boro'
+    'out_sanborn_boro', 'in_bin', 'out_boro_name1'
 ]
 
 
@@ -95,6 +95,31 @@ def func1b(borough=None, addressno=None, streetname=None, api_key=None, ip=None)
 
     return geo_dict
 
+def funcap(borough=None, addressno=None, streetname=None, api_key=None, ip=None):
+    url = ('{}/geoservice/geoservice.svc/Function_AP?Borough={}&AddressNo={}&StreetName={}&key={}'.
+           format(ip, borough, addressno, streetname, api_key))
+    #Encode the url, but allow the characters specified in the safe argument.
+    url = quote(url, safe = ':/?&=')
+    
+    #print('Checking Addresses: {} {} {}'.format(borough, addressno, streetname))
+    #Feed in the url with the BIN and the API Key and read the results
+    http = urllib3.PoolManager()
+    response = http.request('GET', url)
+
+    #If any of these Return Codes are output then send the (includes all return codes for functions 1, 1A, 1B and 1E)
+    #REFERENCE: https://nycplanning.github.io/Geosupport-UPG/appendices/appendix01/#function-1
+    out_grc = ['42', '50', '75']
+
+    #Create a tuple of the keys that need to be retained
+    out_keys = ('out_ap_id',)
+
+    #Load the dictionary nested in the display dictionary
+    raw_dict = json.loads(response.data).get('display')
+    
+    #Only keep the keys that are needed
+    geo_dict = {k: raw_dict[k] for k in out_keys}
+
+    return geo_dict
 
 def flat_list(in_list=None):
     
@@ -175,8 +200,11 @@ def master_geosupport_func(in_bins):
     
     for dicts in t:
         if dicts['addressable'] == 'Addressable':
-            new_dict = func1b(dicts['out_sanborn_boro'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
+            new_dict = func1b(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
             dicts.update(new_dict)
+            new_dict = funcap(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
+            dicts.update(new_dict)
+    
     
     strip_vals(t)        
     replace_na(t)
