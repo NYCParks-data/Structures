@@ -4,3 +4,6 @@
 [submodule "docs"]
 	path = docs
 	url = git@github.com:NYCParks-data/Structures.wiki.git
+[submodule "IPM_Shared_Code_public"]
+	path = IPM_Shared_Code_public
+	url = git@github.com:NYC-Parks/IPM_Shared_Code_public.git
