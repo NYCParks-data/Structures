@@ -5,7 +5,7 @@ from urllib.parse import quote
 from urllib.parse import quote_plus
 import sys
 sys.path.append('../')
-from IPM_Shared_Code.Python.utils import get_config
+from IPM_Shared_Code_public.Python.utils import get_config
 
 urllib3.disable_warnings()
 config = get_config('c:\Projects\config.ini')
