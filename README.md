@@ -1,4 +1,3 @@
-# [Read the docs](https://nycparks-data.github.io/Structures/)
 # Structures
 This project updates attributes in the NYC Parks **[ParksGIS].[DPR].[Structure]** dataset and its related tables by pulling values from 
 authoritative sources outside of the agency. Currently, the following fields are updated in the ParksGIS Structure layer weekly 
