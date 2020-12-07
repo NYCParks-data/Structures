@@ -1,2 +1,3 @@
-remote_theme: fongandrew/hydeout
-baseurl: http://nycparks-data.github.io/poole/
+remote_theme: /lanyon
+
+theme: jekyll-theme-minimal
