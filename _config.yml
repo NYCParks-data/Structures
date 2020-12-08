@@ -1,7 +1,7 @@
 remote_theme: /lanyon
 
 theme: jekyll-theme-minimal
-logo: /img/parks_logo.png
+logo: img/parks_logo.png
 
 plugins:
   - jekyll-relative-links
