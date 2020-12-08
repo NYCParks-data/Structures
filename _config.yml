@@ -1,6 +1,7 @@
 remote_theme: /lanyon
 
 theme: jekyll-theme-minimal
+logo: "https://github.com/NYCParks-data/Structures/blob/gh-pages/img/parks_logo.png"
 
 plugins:
   - jekyll-relative-links
