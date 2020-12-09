@@ -1,7 +1,7 @@
 remote_theme: /lanyon
 
 theme: jekyll-theme-minimal
-logo: "/img/parks_logo.png"
+logo: "https://www.google.com/s2/favicons?domain=www.nycgovparks.org"
 
 plugins:
   - jekyll-relative-links
