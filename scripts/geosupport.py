@@ -28,7 +28,7 @@ def funcbn(bn=None, out_keys=None, grc_err=None,api_key=None,ip=None):
     # print(url)
     #Encode the url, but allow the characters specified in the safe argument.
     url = quote(url, safe = ':/?&=')
-    
+    print(url)
     geo_dict = {}
     obj_to_return = {}
     #Establish the connection
@@ -36,12 +36,13 @@ def funcbn(bn=None, out_keys=None, grc_err=None,api_key=None,ip=None):
     try:
         #Send the get request to the AWS API and retrieve the response
         response = http.request('GET', url)
+        
         #Load the JSON that is returned keeping only the values in the display key
         raw_dict = json.loads(response.data).get('display')
-        
+
         #Keep only the dictionary keys the function caller wants to retain
-        geo_dict = {k: raw_dict[k] for k in out_keys}                
-        
+        geo_dict = {k: raw_dict[k] for k in out_keys}
+
         if geo_dict['out_grc'].strip() in grc_err:
             #bin_dict.update(geo_dict)
             obj_to_return['bin'] = bn
@@ -57,7 +58,7 @@ def funcbn(bn=None, out_keys=None, grc_err=None,api_key=None,ip=None):
     except:       
         print('exception!')
         #Set the output equal to the input BIN so that no information is lost
-        add_dict = [bin_dict]
+        add_dict = [bn]
     # returns either list or dict:
     return obj_to_return
 
@@ -116,6 +117,29 @@ def funcap(borough=None, addressno=None, streetname=None, api_key=None, ip=None)
     #Load the dictionary nested in the display dictionary
     raw_dict = json.loads(response.data).get('display')
     
+    #Only keep the keys that are needed
+    geo_dict = {k: raw_dict[k] for k in out_keys}
+
+    return geo_dict
+
+def func1n(borough=None, streetname=None, api_key=None, ip=None):
+    #Normalize the street names
+    url = ('{}/geoservice/geoservice.svc/Function_1N?Borough={}&StreetName={}&key={}'.
+           format(ip, borough, streetname, geo_key))
+    #Encode the url, but allow the characters specified in the safe argument.
+    url = quote(url, safe = ':/?&=')
+    
+ 
+    #Feed in the url with the BIN and the API Key and read the results
+    http = urllib3.PoolManager()
+    response = http.request('GET', url)
+
+    #Create a tuple of the keys that need to be retained
+    out_keys = ('out_boro_name1', 'out_grc', 'out_stname1')
+
+    #Load the dictionary nested in the display dictionary
+    raw_dict = json.loads(response.data).get('display')
+
     #Only keep the keys that are needed
     geo_dict = {k: raw_dict[k] for k in out_keys}
 
@@ -189,13 +213,20 @@ def add_ck(in_list):
 
 def master_geosupport_func(in_bins):
     list_of_things = []
-
+    
+    #Add address point Open Data Function Call
+    
+    #Add function call for 1N to normalize addresses and strip_vals to remove white space
+    #In 1N we want to keep out_boro_name1 out_st_name1
     for bn in in_bins:
         list_of_things.append(funcbn(bn, out_keys = out_keys, grc_err = grc_err, api_key = geo_key, ip = geo_ip))
     
     t = flat_list(list_of_things)
     
     strip_vals(t)
+    
+    ##Combine output of 1N and BN and deduplicate those records based on Borough, High House Number, Low House Number, Street Name and Hyphen Type
+    
     add_ck(t)
     
     for dicts in t:
