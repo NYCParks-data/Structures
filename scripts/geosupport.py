@@ -183,7 +183,7 @@ def flat_list(in_list=None):
 def strip_vals(in_list):
     for dicts in in_list:
         dicts.update((k, v.strip()) for k, v in dicts.items() if isinstance(v, str) )
-        #return dicts
+        # return dicts
 
 def replace_na(in_list):
     for dicts in in_list:
@@ -215,8 +215,50 @@ def master_geosupport_func(in_bins):
     list_of_things = []
     
     #Add address point Open Data Function Call
+
+    #Add function call for 1N to normalize addresses and strip_vals to remove white space
+
+    #In 1N we want to keep out_boro_name1 out_st_name1
+    
+    for bn in in_bins:
+        list_of_things.append(funcbn(bn, out_keys = out_keys, grc_err = grc_err, api_key = geo_key, ip = geo_ip))
+    
+    t = flat_list(list_of_things)
+    
+    strip_vals(t)
+    
+    ##Combine output of 1N and BN and deduplicate those records based on Borough, High House Number, Low House Number, Street Name and Hyphen Type
+    
+    add_ck(t)
+    
+    for dicts in t:
+        if dicts['addressable'] == 'Addressable':
+            new_dict = func1b(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
+            dicts.update(new_dict)
+            new_dict = funcap(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
+            dicts.update(new_dict)
+    
+    
+    strip_vals(t)        
+    replace_na(t)
+    
+    return_df = pd.DataFrame(t)
+    return return_df
+
+
+    def master_geosupport_func2(in_bins):
+    list_of_things = []
+    list_of_things2 = []
+    
+    #Add address point Open Data Function Call
+    aps, failed_bins = get_address_point(in_bins, geom_col = 'the_geom')
+    bins_w_aps = aps.bin.values
     
     #Add function call for 1N to normalize addresses and strip_vals to remove white space
+    for bn in bins_w_aps:
+        
+
+
     #In 1N we want to keep out_boro_name1 out_st_name1
     for bn in in_bins:
         list_of_things.append(funcbn(bn, out_keys = out_keys, grc_err = grc_err, api_key = geo_key, ip = geo_ip))
