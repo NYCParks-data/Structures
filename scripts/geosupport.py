@@ -219,7 +219,7 @@ def master_geosupport_func(in_bins):
     #Add function call for 1N to normalize addresses and strip_vals to remove white space
 
     #In 1N we want to keep out_boro_name1 out_st_name1
-    
+
     for bn in in_bins:
         list_of_things.append(funcbn(bn, out_keys = out_keys, grc_err = grc_err, api_key = geo_key, ip = geo_ip))
     
@@ -246,7 +246,7 @@ def master_geosupport_func(in_bins):
     return return_df
 
 
-    def master_geosupport_func2(in_bins):
+def master_geosupport_func2(in_bins):
     list_of_things = []
     list_of_things2 = []
     
@@ -255,8 +255,6 @@ def master_geosupport_func(in_bins):
     bins_w_aps = aps.bin.values
     
     #Add function call for 1N to normalize addresses and strip_vals to remove white space
-    for bn in bins_w_aps:
-        
 
 
     #In 1N we want to keep out_boro_name1 out_st_name1
