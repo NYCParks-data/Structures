@@ -6,6 +6,7 @@ from urllib.parse import quote_plus
 import sys
 sys.path.append('../')
 from IPM_Shared_Code_public.Python.utils import get_config
+from get_address_points import *
 
 urllib3.disable_warnings()
 config = get_config('c:\Projects\config.ini')
@@ -28,7 +29,7 @@ def funcbn(bn=None, out_keys=None, grc_err=None,api_key=None,ip=None):
     # print(url)
     #Encode the url, but allow the characters specified in the safe argument.
     url = quote(url, safe = ':/?&=')
-    print(url)
+    # print(url)
     geo_dict = {}
     obj_to_return = {}
     #Establish the connection
@@ -246,39 +247,76 @@ def master_geosupport_func(in_bins):
     return return_df
 
 
-def master_geosupport_func2(in_bins):
-    list_of_things = []
-    list_of_things2 = []
+def master_geosupport_func2(structs_df):
+    # list_of_things = []
+    # list_of_things2 = []
     
     #Add address point Open Data Function Call
-    aps, failed_bins = get_address_point(in_bins, geom_col = 'the_geom')
-    bins_w_aps = aps.bin.values
+    funcap_outputs = structs_df.apply(lambda row: get_address_point2(row['bin'],
+              geom_col = 'the_geom'),axis =1)
+    aps_gdf = gpd.GeoDataFrame(flat_list(funcap_outputs), geometry = 'the_geom',crs = 'epsg:4326').fillna(np.nan)
+    aps = aps_gdf[~pd.isnull(aps_gdf['the_geom'])].to_crs('epsg:2263').copy()
+
+    # aps, failed_bins = get_address_point(in_bins, geom_col = 'the_geom')
+    # bins_w_aps = aps.bin.values
     
     #Add function call for 1N to normalize addresses and strip_vals to remove white space
 
 
     #In 1N we want to keep out_boro_name1 out_st_name1
-    for bn in in_bins:
-        list_of_things.append(funcbn(bn, out_keys = out_keys, grc_err = grc_err, api_key = geo_key, ip = geo_ip))
-    
-    t = flat_list(list_of_things)
-    
+    func1N_outputs = aps.apply(lambda row: func1n(borough=row['borocode'],
+                             streetname=row['full_stree'],
+                             api_key=geo_key,
+                             ip=geo_ip),axis =1)
+    list_1N = flat_list(func1N_outputs)
+    strip_vals(list_1N)
+    func1N_out_df = pd.DataFrame(list_1N)
+    aps_1N_df = aps.join(func1N_out_df)
+
+
+    # function BN:
+    funcBN_outputs = structs_df.apply(lambda row: funcbn(row['bin'],
+              out_keys=out_keys,
+              grc_err=grc_err,
+              api_key=geo_key,
+              ip=geo_ip),axis =1)
+    t = flat_list(funcBN_outputs)
     strip_vals(t)
+    BN_out_df = pd.DataFrame(t)
+    # for bn in in_bins:
+    #     list_of_things.append(funcbn(bn, out_keys = out_keys, grc_err = grc_err, api_key = geo_key, ip = geo_ip))
+    
+    # t = flat_list(list_of_things)
     
     ##Combine output of 1N and BN and deduplicate those records based on Borough, High House Number, Low House Number, Street Name and Hyphen Type
+    aps_1N_df['high_address_number'] = aps_1N_df['h_no']
+    aps_1N_df['low_address_number'] = aps_1N_df['h_no']
+    aps_1N_df.rename(columns = {'out_stname1':'street_name'},inplace = True)
+    cols_to_match = ['bin','high_address_number','low_address_number','street_name','out_boro_name1']
+    df1 = aps_1N_df[cols_to_match+['address_id']]
+    df2 = BN_out_df
+    combined_deduped = pd.concat([df1,df2]).drop_duplicates(cols_to_match,keep='last')
+    combined = pd.concat([df1,df2])
+    df_w_ap_ids = pd.concat(g for _, 
+        g in combined.groupby(cols_to_match) if len(g) > 1).drop_duplicates(cols_to_match,keep='first')
+    df_new = combined_deduped.merge(df_w_ap_ids,how = 'left',suffixes=('', '_y'), 
+                       left_on = cols_to_match, right_on=cols_to_match)
+    df_new.address_id.fillna(df_new.address_id_y, inplace=True)
+    df_new.drop(df_new.filter(regex='_y$').columns.tolist(),axis=1, inplace=True)
+
+
+    # add_ck(t)
     
-    add_ck(t)
-    
-    for dicts in t:
-        if dicts['addressable'] == 'Addressable':
-            new_dict = func1b(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
-            dicts.update(new_dict)
-            new_dict = funcap(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
-            dicts.update(new_dict)
+    # for dicts in t:
+    #     if dicts['addressable'] == 'Addressable':
+    #         new_dict = func1b(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
+    #         dicts.update(new_dict)
+    #         new_dict = funcap(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
+    #         dicts.update(new_dict)
     
     
-    strip_vals(t)        
-    replace_na(t)
+    # strip_vals(t)        
+    # replace_na(t)
     
-    return_df = pd.DataFrame(t)
+    return_df = df_new #pd.DataFrame(t)
     return return_df
