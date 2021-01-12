@@ -16,11 +16,10 @@ geo_ip = config['keys']['geosupport_ip']
 
 # api_key = geo_key
 grc_err = ['01/F', '20', '21', '22', '23']
-out_keys = [
-    'AddressRangeList', 'out_bbl', 'out_TPAD_bin', 'out_TPAD_bin_status',
-    'out_TPAD_conflict_flag', 'out_error_message', 'out_grc',
-    'out_sanborn_boro', 'in_bin', 'out_boro_name1'
-]
+
+out_keys = ['AddressRangeList', 'out_bbl', 'out_TPAD_bin', 'out_TPAD_bin_status',
+            'out_TPAD_conflict_flag', 'out_error_message', 'out_grc',
+            'in_bin', 'out_boro_name1']
 
 
 def funcbn(bn=None, out_keys=None, grc_err=None,api_key=None,ip=None):
@@ -191,26 +190,24 @@ def replace_na(in_list):
         dicts.update((k, None) for k, v in dicts.items() if v == 'N/A' or (isinstance(v, str) and v == ''))
         #return dicts
 
-def add_ck(in_list):
-    for dicts in in_list:
-        if dicts['out_grc'].strip('00') == '':
+def add_ck(df):
+    #Records with 00 or -99 GRC codes are valid to check for "addressable" condition required for Function 1B
+    if df['out_grc'] in ['00', '-99']:
             
             #Check for equality and validity of low and high house number. The low and high house numbers need cannot be blank and
             #must be equal to use as input into function 1.
-            if (dicts['high_address_number'].strip() == dicts['low_address_number'].strip() and 
-               (dicts['high_address_number'].strip() != '' and dicts['low_address_number'].strip() != '')):          
-                add_val = {'addressable': 'Addressable'}
+            if (df['high_address_number'] == df['low_address_number']):          
+                add_val = 'Addressable'
                 
             #If the low and high range are not equal then the record should not be input into function 1.
             else:
-                add_val = {'addressable': 'Non-Addressable, Range'}
+                add_val = 'Non-Addressable, Range'
                 
+
+    else:
+        add_val = 'Non-Addressable: {}'.format(df['out_error_message'])
         
-        else:
-            add_val = {'addressable':'Non-Addressable: {}'.format(dicts['out_error_message'].strip())}
-            
-        dicts.update(add_val)
-    #return dicts
+    return add_val
 
 def master_geosupport_func(in_bins):
     list_of_things = []
@@ -251,49 +248,73 @@ def master_geosupport_func2(structs_df):
     # list_of_things = []
     # list_of_things2 = []
     
-    #Add address point Open Data Function Call
+    #Call function to get address points from Open Data portal (based on BIN)
     funcap_outputs = structs_df.apply(lambda row: get_address_point2(row['bin'],
-              geom_col = 'the_geom'),axis =1)
-    aps_gdf = gpd.GeoDataFrame(flat_list(funcap_outputs), geometry = 'the_geom',crs = 'epsg:4326').fillna(np.nan)
-    aps = aps_gdf[~pd.isnull(aps_gdf['the_geom'])].to_crs('epsg:2263').copy()
+                                                                     geom_col = 'the_geom'), axis =1)
+    #Convert the address points results to a geodataframe, defining the initial projection as WGS84(epsg:4326)
+    aps_gdf = (gpd.GeoDataFrame(flat_list(funcap_outputs), 
+                                geometry = 'the_geom',
+                                crs = 'epsg:4326').fillna(np.nan))
+    
+    #Convert the CRS to the NYC Standard of State Plane New York Long Island (epsg:2263)
+    aps = (aps_gdf[~pd.isnull(aps_gdf['the_geom'])]
+           .to_crs('epsg:2263')
+           .copy())
 
     # aps, failed_bins = get_address_point(in_bins, geom_col = 'the_geom')
     # bins_w_aps = aps.bin.values
     
-    #Add function call for 1N to normalize addresses and strip_vals to remove white space
-
-
+    #Call function 1N to get the normalized street names
     #In 1N we want to keep out_boro_name1 out_st_name1
     func1N_outputs = aps.apply(lambda row: func1n(borough=row['borocode'],
-                             streetname=row['full_stree'],
-                             api_key=geo_key,
-                             ip=geo_ip),axis =1)
-    list_1N = flat_list(func1N_outputs)
-    strip_vals(list_1N)
-    func1N_out_df = pd.DataFrame(list_1N)
+                                                  streetname = row['full_stree'],
+                                                  api_key = geo_key,
+                                                  ip = geo_ip),axis =1)
+    
+    #Make the list of list of dictionaries into a list of dictionaries
+    #list_1N = flat_list(func1N_outputs)
+    
+    #Strip white space from all returned values because it's not necessary
+    strip_vals(func1N_outputs)
+    
+    #Convert the results of 1N to a dataframe. The outputs need to be converted to a list
+    #and the indexes as well so the correct index applies to the correct row.
+    func1N_out_df = pd.DataFrame(list(func1N_outputs), list(func1N_outputs.index))
+    
+    #Join the 1N results to the address points dataframe based on the index
     aps_1N_df = aps.join(func1N_out_df)
 
-
-    # function BN:
-    funcBN_outputs = structs_df.apply(lambda row: funcbn(row['bin'],
-              out_keys=out_keys,
-              grc_err=grc_err,
-              api_key=geo_key,
-              ip=geo_ip),axis =1)
-    t = flat_list(funcBN_outputs)
-    strip_vals(t)
-    BN_out_df = pd.DataFrame(t)
-    # for bn in in_bins:
-    #     list_of_things.append(funcbn(bn, out_keys = out_keys, grc_err = grc_err, api_key = geo_key, ip = geo_ip))
-    
-    # t = flat_list(list_of_things)
-    
-    ##Combine output of 1N and BN and deduplicate those records based on Borough, High House Number, Low House Number, Street Name and Hyphen Type
+    #Rename the h_no column to high_address_number and low_address_number, this is needed for later deduplication
     aps_1N_df['high_address_number'] = aps_1N_df['h_no']
     aps_1N_df['low_address_number'] = aps_1N_df['h_no']
+    
+    #Rename the streetname column from out_stname1
     aps_1N_df.rename(columns = {'out_stname1':'street_name'},inplace = True)
+
+    #Call function BN to get addresses for BINs:
+    funcBN_outputs = structs_df.apply(lambda row: funcbn(bn = row['bin'],
+                                                         out_keys = out_keys,
+                                                         grc_err = grc_err,
+                                                         api_key = geo_key,
+                                                         ip = geo_ip), axis =1)
+    
+    #Flatten the list of BINs returned
+    funcBN_outputs_flat = flat_list(funcBN_outputs)
+    
+    #Strip white space from all returned values because it's not necessary
+    strip_vals(funcBN_outputs_flat)
+    
+    #Convert the results of BN to a dataframe
+    BN_out_df = pd.DataFrame(funcBN_outputs_flat)
+
+    ##Combine output of 1N and BN and deduplicate those records based on Borough, High House Number, Low House Number, Street Name and Hyphen Type
+    
+    #Define the columns to match for deduplication
     cols_to_match = ['bin','high_address_number','low_address_number','street_name','out_boro_name1']
+    
+    #Keep address_id and the cols_to_match from address points and 1N output
     df1 = aps_1N_df[cols_to_match+['address_id']]
+    
     df2 = BN_out_df
     combined_deduped = pd.concat([df1,df2]).drop_duplicates(cols_to_match,keep='last')
     combined = pd.concat([df1,df2])
@@ -304,7 +325,26 @@ def master_geosupport_func2(structs_df):
     df_new.address_id.fillna(df_new.address_id_y, inplace=True)
     df_new.drop(df_new.filter(regex='_y$').columns.tolist(),axis=1, inplace=True)
 
+    #Replace the nan values for address point only address with an out_grc = -99
+    df_new['out_grc'] = df_new['out_grc'].fillna('-99')
+    
+    #Convert out_grc to string (as it should be) to avoid errors in larger data
+    df_new['out_grc'] = df_new.apply(lambda x: str(x['out_grc']), axis = 1)
 
+    df_new['addressable'] = df_new.apply(lambda x: add_ck(x), axis = 1)
+    
+    func1B_outputs = (df_new[df_new['addressable'] == 'Addressable']
+                      .apply(lambda row: func1b(borough= row['out_boro_name1'], 
+                                                addressno= row['high_address_number'], 
+                                                streetname= row['street_name'],
+                                                api_key=geo_key,
+                                                ip=geo_ip), axis =1))
+    
+    strip_vals(func1B_outputs)
+    
+    func1B_out_df = (pd.DataFrame(list(func1B_outputs), index = list(func1B_outputs.index)))  
+    
+    final = df_new.join(func1B_out_df)
     # add_ck(t)
     
     # for dicts in t:
@@ -318,5 +358,5 @@ def master_geosupport_func2(structs_df):
     # strip_vals(t)        
     # replace_na(t)
     
-    return_df = df_new #pd.DataFrame(t)
+    return_df = final #pd.DataFrame(t)
     return return_df
