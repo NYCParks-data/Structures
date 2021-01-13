@@ -10,7 +10,7 @@ def get_address_point(bins, geom_col):
     add_pts = []
 
     for b in bins:
-        url = 'http://data.cityofnewyork.us/resource/qmzz-27dd.json?bin={}'.format(b)
+        url = 'http://data.cityofnewyork.us/resource/5r2a-fpey.json?bin={}'.format(b)
         # url = 'http://data.cityofnewyork.us/resource/n86c-vq2h?bin={}'.format(b)
         #Encode the url, but allow the characters specified in the safe argument.
         url = quote(url, safe = ':/?&=')
@@ -40,7 +40,7 @@ def get_address_point2(bin, geom_col):
     add_pts = []
 
     # for b in bins:
-    url = 'http://data.cityofnewyork.us/resource/qmzz-27dd.json?bin={}'.format(bin)
+    url = 'http://data.cityofnewyork.us/resource/5r2a-fpey.json?bin={}'.format(bin)
         # url = 'http://data.cityofnewyork.us/resource/n86c-vq2h?bin={}'.format(b)
         #Encode the url, but allow the characters specified in the safe argument.
     url = quote(url, safe = ':/?&=')

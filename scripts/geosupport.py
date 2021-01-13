@@ -252,7 +252,7 @@ def master_geosupport_func2(structs_df):
     funcap_outputs = structs_df.apply(lambda row: get_address_point2(row['bin'],
                                                                      geom_col = 'the_geom'), axis =1)
     #Convert the address points results to a geodataframe, defining the initial projection as WGS84(epsg:4326)
-    aps_gdf = (gpd.GeoDataFrame(flat_list(funcap_outputs), 
+    aps_gdf = (gpd.GeoDataFrame(list(funcap_outputs), 
                                 geometry = 'the_geom',
                                 crs = 'epsg:4326').fillna(np.nan))
     
@@ -288,6 +288,9 @@ def master_geosupport_func2(structs_df):
     aps_1N_df['high_address_number'] = aps_1N_df['h_no']
     aps_1N_df['low_address_number'] = aps_1N_df['h_no']
     
+    #Add a column to signify this is a posted addresses
+    aps_1N_df['posted_address'] = 1
+    
     #Rename the streetname column from out_stname1
     aps_1N_df.rename(columns = {'out_stname1':'street_name'},inplace = True)
 
@@ -306,14 +309,17 @@ def master_geosupport_func2(structs_df):
     
     #Convert the results of BN to a dataframe
     BN_out_df = pd.DataFrame(funcBN_outputs_flat)
-
+    
+    #Add column to signify the official addresses
+    BN_out_df['official_address'] = 1
+    
     ##Combine output of 1N and BN and deduplicate those records based on Borough, High House Number, Low House Number, Street Name and Hyphen Type
     
     #Define the columns to match for deduplication
     cols_to_match = ['bin','high_address_number','low_address_number','street_name','out_boro_name1']
     
     #Keep address_id and the cols_to_match from address points and 1N output
-    df1 = aps_1N_df[cols_to_match+['address_id']]
+    df1 = aps_1N_df[cols_to_match+['address_id', 'posted_address']]
     
     df2 = BN_out_df
     combined_deduped = pd.concat([df1,df2]).drop_duplicates(cols_to_match,keep='last')
