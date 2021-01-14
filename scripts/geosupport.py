@@ -145,6 +145,16 @@ def func1n(borough=None, streetname=None, api_key=None, ip=None):
 
     return geo_dict
 
+#This function uses results from function BN to flag official addresses when the output GRC code is 00
+def official_address(df):
+    if df['out_grc'] == '00':
+        official = 1
+    
+    else:
+        official = 0
+        
+    return official
+
 def flat_list(in_list=None):
     
     #This function will take the return from Geosupport Function BN aka BIN and make the return all of the same type.
@@ -251,8 +261,12 @@ def master_geosupport_func2(structs_df):
     #Call function to get address points from Open Data portal (based on BIN)
     funcap_outputs = structs_df.apply(lambda row: get_address_point2(row['bin'],
                                                                      geom_col = 'the_geom'), axis =1)
+    
+    #Unnest the results from address points
+    funcap_outputs_unlist = [inner for outer in funcap_outputs for inner in outer]
+    
     #Convert the address points results to a geodataframe, defining the initial projection as WGS84(epsg:4326)
-    aps_gdf = (gpd.GeoDataFrame(list(funcap_outputs), 
+    aps_gdf = (gpd.GeoDataFrame(list(funcap_outputs_unlist), 
                                 geometry = 'the_geom',
                                 crs = 'epsg:4326').fillna(np.nan))
     
@@ -311,7 +325,7 @@ def master_geosupport_func2(structs_df):
     BN_out_df = pd.DataFrame(funcBN_outputs_flat)
     
     #Add column to signify the official addresses
-    BN_out_df['official_address'] = 1
+    BN_out_df['official_address'] = BN_out_df.apply(lambda x: official_address(x), axis = 1)
     
     ##Combine output of 1N and BN and deduplicate those records based on Borough, High House Number, Low House Number, Street Name and Hyphen Type
     
@@ -322,13 +336,31 @@ def master_geosupport_func2(structs_df):
     df1 = aps_1N_df[cols_to_match+['address_id', 'posted_address']]
     
     df2 = BN_out_df
-    combined_deduped = pd.concat([df1,df2]).drop_duplicates(cols_to_match,keep='last')
+    
+    #Concatenate (or Union) the two data frames, retaining any duplicates from df2
+    combined_deduped = (pd.concat([df1,df2])
+                        .drop_duplicates(cols_to_match,keep = 'last'))
+    
+    #Concatenate (or Union) the two data frames, keeping all records
     combined = pd.concat([df1,df2])
-    df_w_ap_ids = pd.concat(g for _, 
-        g in combined.groupby(cols_to_match) if len(g) > 1).drop_duplicates(cols_to_match,keep='first')
-    df_new = combined_deduped.merge(df_w_ap_ids,how = 'left',suffixes=('', '_y'), 
-                       left_on = cols_to_match, right_on=cols_to_match)
+    
+    #DOCUMENT
+    df_w_ap_ids = (pd.concat(g for _, g in combined.groupby(cols_to_match) 
+                             if len(g) > 1)
+                   .drop_duplicates(cols_to_match,keep = 'first'))
+    
+    #Merge the two deduplicated dataframes based on the subset of columns that matter (cols_to_match)
+    df_new = combined_deduped.merge(df_w_ap_ids,how = 'left',
+                                    suffixes = ('', '_y'), 
+                                    left_on = cols_to_match, 
+                                    right_on = cols_to_match)
+    
+    #Fill NA values with the appropriate values from the other dataframe
     df_new.address_id.fillna(df_new.address_id_y, inplace=True)
+    df_new.posted_address.fillna(df_new.posted_address_y, inplace=True)
+    df_new.official_address.fillna(df_new.official_address_y, inplace=True)
+    
+    #Drop the columns with the _y suffix (or _y followed by $ or END OF TEXT)
     df_new.drop(df_new.filter(regex='_y$').columns.tolist(),axis=1, inplace=True)
 
     #Replace the nan values for address point only address with an out_grc = -99
