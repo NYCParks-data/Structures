@@ -254,12 +254,12 @@ def master_geosupport_func(in_bins):
     return return_df
 
 
-def master_geosupport_func2(structs_df):
+def master_geosupport_func2(structs_df,bin_col):
     # list_of_things = []
     # list_of_things2 = []
     
     #Call function to get address points from Open Data portal (based on BIN)
-    funcap_outputs = structs_df.apply(lambda row: get_address_point2(row['bin'],
+    funcap_outputs = structs_df.apply(lambda row: get_address_point2(row[bin_col],
                                                                      geom_col = 'the_geom'), axis =1)
     
     #Unnest the results from address points
@@ -309,7 +309,7 @@ def master_geosupport_func2(structs_df):
     aps_1N_df.rename(columns = {'out_stname1':'street_name'},inplace = True)
 
     #Call function BN to get addresses for BINs:
-    funcBN_outputs = structs_df.apply(lambda row: funcbn(bn = row['bin'],
+    funcBN_outputs = structs_df.apply(lambda row: funcbn(bn = row[bin_col],
                                                          out_keys = out_keys,
                                                          grc_err = grc_err,
                                                          api_key = geo_key,
