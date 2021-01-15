@@ -86,7 +86,7 @@ def func1b(borough=None, addressno=None, streetname=None, api_key=None, ip=None)
                 'out_fire_co', 'out_fire_co_str', 'out_fire_div', 'out_b10sc1',
                 'out_police_patrol_boro', 'out_police_area', 'out_police_pct', 
                 'out_san_sched', 'out_san_dist_section', 'out_san_recycle', 'out_san_reg', 'out_san_org_pick_up',
-                'out_usps_city_name', 'out_preferred_lgc', 'out_sos_ind', 'out_physical_id')
+                'out_usps_city_name', 'out_preferred_lgc', 'out_sos_ind', 'out_physical_id', 'in_boro')
 
     #Load the dictionary nested in the display dictionary
     raw_dict = json.loads(response.data).get('display')
@@ -219,41 +219,6 @@ def add_ck(df):
         
     return add_val
 
-def master_geosupport_func(in_bins):
-    list_of_things = []
-    
-    #Add address point Open Data Function Call
-
-    #Add function call for 1N to normalize addresses and strip_vals to remove white space
-
-    #In 1N we want to keep out_boro_name1 out_st_name1
-
-    for bn in in_bins:
-        list_of_things.append(funcbn(bn, out_keys = out_keys, grc_err = grc_err, api_key = geo_key, ip = geo_ip))
-    
-    t = flat_list(list_of_things)
-    
-    strip_vals(t)
-    
-    ##Combine output of 1N and BN and deduplicate those records based on Borough, High House Number, Low House Number, Street Name and Hyphen Type
-    
-    add_ck(t)
-    
-    for dicts in t:
-        if dicts['addressable'] == 'Addressable':
-            new_dict = func1b(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
-            dicts.update(new_dict)
-            new_dict = funcap(dicts['out_boro_name1'], dicts['high_address_number'], dicts['street_name'], geo_key, geo_ip)
-            dicts.update(new_dict)
-    
-    
-    strip_vals(t)        
-    replace_na(t)
-    
-    return_df = pd.DataFrame(t)
-    return return_df
-
-
 def master_geosupport_func2(structs_df,bin_col):
     # list_of_things = []
     # list_of_things2 = []
@@ -383,6 +348,10 @@ def master_geosupport_func2(structs_df,bin_col):
     func1B_out_df = (pd.DataFrame(list(func1B_outputs), index = list(func1B_outputs.index)))  
     
     final = df_new.join(func1B_out_df)
+    
+    final['Boro_Code'] = final.apply(lambda x: str(x['bin'])[0:1], axis = 1)
+    final['official_address'] = final['official_address'].fillna(0)
+    final['posted_address'] = final['posted_address'].fillna(0)
     # add_ck(t)
     
     # for dicts in t:
