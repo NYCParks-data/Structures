@@ -17,7 +17,7 @@
 	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
 																													   												
 ***********************************************************************************************************************/
---drop table structuresdb.dbo.tbl_geosupport
+--drop table structuresdb.dbo.tbl_geosupport_address
 set ansi_nulls on;
 go
 
@@ -56,8 +56,10 @@ create table structuresdb.dbo.tbl_geosupport_address (BIN int not null, --foreig
 											  Police_Boro_Com varchar(4), 
 											  Police_Precinct varchar(4), 
 											  Sanitation_Subsect varchar(4), 
-											  Sanitation_District varchar(4), 
+											  Sanitation_District varchar(10), 
 											  Sanitation_Recycling varchar(4), 
 											  Sanitation_Reg_Pickup varchar(5),
-											  Address_ID int);
+											  Address_ID int,
+											  official_address int,
+											  posted_address int);
 
