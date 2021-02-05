@@ -120,7 +120,8 @@ create or alter procedure dbo.sp_m_tbl_parks_structures as
 						   /*The source of the duplicate is parks.*/
 						   'parks' as id_source,
 						   @notes
-					from #parks;
+					from #parks
+					where n_system > 1 and parks_id is not null;
 			commit;
 		end try
 
