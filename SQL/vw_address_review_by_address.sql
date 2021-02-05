@@ -37,13 +37,19 @@ select l.bin,
 	   end as blank_range,
 	   l.official_address,
 	   l.posted_address,
+	   l.usps_city,
+	   l.boro_code,
+	   l.zip_code,
 	   r.shape
 from structuresdb.dbo.tbl_geosupport_address as l
-left join
+right join
 	 (select *
 	  from structuresdb.dbo.tbl_parks_structures
 	  where bin is not null and 
-			bin != 0) as r
+			bin != 0 and
+			bin % 1000000 > 1 and
+			((doitt_id is not null) or
+			(doitt_id is not null and doitt_source is null and n_doitt_ids = 1))) as r
 on l.bin = r.bin)
 
 
@@ -60,5 +66,8 @@ select row_number() over(order by bin) as fid,
 			when ranged = 1 and official_address = 1 and isnull(posted_address, 0) = 0 then 'Official Only Ranged Address'
 			else 'Other/No Address'
 	   end as address_type,
+	   usps_city,
+	   boro_code,
+	   zip_code,
 	   shape
 from struct
