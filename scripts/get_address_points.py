@@ -6,11 +6,18 @@ from shapely.geometry import shape
 import numpy as np
 
 def get_address_point(bins, geom_col):
+    #DO NOT USE THIS ONE, USE THE ONE BELOW!
     failed = []
     add_pts = []
+    parent_url = 'https://data.cityofnewyork.us/api/views/g6pj-hd8k'
+    parent_response = requests.get(parent_url).json()
+    child_id = parent_response['childViews'][0]
 
     for b in bins:
-        url = 'http://data.cityofnewyork.us/resource/5r2a-fpey.json?bin={}'.format(b)
+        url ='http://data.cityofnewyork.us/resource/{}.json?bin={}'.format(child_id,b)
+        # url = 'http://data.cityofnewyork.us/City-Government/NYC-Address-Points/g6pj-hd8k'
+        # https://data.cityofnewyork.us/resource/tric-ieub.json
+        # url = 'http://data.cityofnewyork.us/resource/7xhx-ywii.json?bin={}'.format(b)
         # url = 'http://data.cityofnewyork.us/resource/n86c-vq2h?bin={}'.format(b)
         #Encode the url, but allow the characters specified in the safe argument.
         url = quote(url, safe = ':/?&=')
@@ -38,9 +45,13 @@ def get_address_point(bins, geom_col):
 def get_address_point2(bin, geom_col):
     failed = []
     add_pts = []
+    parent_url = 'https://data.cityofnewyork.us/api/views/g6pj-hd8k'
+    parent_response = requests.get(parent_url).json()
+    child_id = parent_response['childViews'][0]
 
     #Add the provided bin to the api query.
-    url = 'http://data.cityofnewyork.us/resource/5r2a-fpey.json?bin={}'.format(bin)
+    url ='http://data.cityofnewyork.us/resource/{}.json?bin={}'.format(child_id,bin)
+    # url = 'http://data.cityofnewyork.us/resource/7xhx-ywii.json?bin={}'.format(bin)
 
     #Encode the url, but allow the characters specified in the safe argument.
     url = quote(url, safe = ':/?&=')
