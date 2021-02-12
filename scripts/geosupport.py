@@ -219,12 +219,12 @@ def add_ck(df):
         
     return add_val
 
-def master_geosupport_func2(structs_df,bin_col):
+def master_geosupport_func(structs_df,bin_col):
     # list_of_things = []
     # list_of_things2 = []
     
     #Call function to get address points from Open Data portal (based on BIN)
-    funcap_outputs = structs_df.apply(lambda row: get_address_point2(row[bin_col],
+    funcap_outputs = structs_df.apply(lambda row: get_address_point(row[bin_col],
                                                                      geom_col = 'the_geom'), axis =1)
     
     #Unnest the results from address points
