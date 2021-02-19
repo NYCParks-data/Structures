@@ -1,0 +1,19 @@
+
+ Feature_Class: ipmdb.arc.tbl_parksgis_greenroof 
+
+ Feature_Class: ipmdb.arc.tbl_dm_buildings 
+
+ Feature_Class: ipmdb.arc.tbl_cna_structures 
+Deleted column typecategory from ipmdb.arc.tbl_cna_structures. 
+Deleted column ampssync from ipmdb.arc.tbl_cna_structures. 
+Deleted column ampssyncdate from ipmdb.arc.tbl_cna_structures. 
+Deleted column comfortstation from ipmdb.arc.tbl_cna_structures. 
+Deleted column communityboard from ipmdb.arc.tbl_cna_structures. 
+Deleted column councildistrict from ipmdb.arc.tbl_cna_structures. 
+Deleted column estsqfeet from ipmdb.arc.tbl_cna_structures. 
+Deleted column femarisk from ipmdb.arc.tbl_cna_structures. 
+Deleted column phone from ipmdb.arc.tbl_cna_structures. 
+Deleted column pipcreated from ipmdb.arc.tbl_cna_structures. 
+Deleted column precinct from ipmdb.arc.tbl_cna_structures. 
+Deleted column subpropertyname from ipmdb.arc.tbl_cna_structures. 
+Deleted column zipcode from ipmdb.arc.tbl_cna_structures. 
