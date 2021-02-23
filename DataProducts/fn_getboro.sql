@@ -20,17 +20,18 @@
 use systemdb
 go
 
-/*This user-defined function will convert a numberic boro code into a generic City. Note that Queens and Brooklyn will appear as such and
-  not as the actual city names.*/
-create or alter function dbo.fn_getcity(@boro_coden int)
+/*This user-defined function will convert a numeric boro code into the Borough.*/
+create or alter function dbo.fn_getboro(@boro_coden int)
 returns nvarchar(13)
 with execute as caller as
 	begin
-	return(select case when @boro_coden = 1 then 'NEW YORK'
-					   when @boro_coden = 2 then 'BRONX'
-					   when @boro_coden = 3 then 'BROOKLYN'
-					   when @boro_coden = 4 then 'QUEENS'
-					   when @boro_coden = 5 then 'STATEN ISLAND'
+	return(select case when @boro_coden = 1 then 'New York'
+					   when @boro_coden = 2 then 'Bronx'
+					   when @boro_coden = 3 then 'Brooklyn'
+					   when @boro_coden = 4 then 'Queens'
+					   when @boro_coden = 5 then 'Staten Island'
+					   /*All municipalities that border NYC also have boro codes, but for our purposes I don't think we care
+					     what they are. The case when can be expanded if desire.*/
 					   else null
 				  end as borough)
 	end;
