@@ -17,7 +17,7 @@
 	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
 																													   												
 ***********************************************************************************************************************/
-use systemdb
+use interimdb
 go
 
 create or alter view dbo.vw_address_types_by_bin as
@@ -30,7 +30,7 @@ select row_number() over(order by bin) as fid,
 	   sum(case when address_type = 'Official Only Ranged Address' then 1 else 0 end) official_ranged,
 	   sum(case when address_type = 'Other/No Address' then 1 else 0 end) other_or_noaddress, 
 	   count(*) as n
-from systemdb.dbo.vw_address_review_by_address
+from interimdb.dbo.vw_address_review_by_address
 group by bin
 
 
