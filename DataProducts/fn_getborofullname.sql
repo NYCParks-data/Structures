@@ -21,7 +21,7 @@ use systemdb
 go
 
 /*This user-defined function will convert a numeric boro code into the Borough.*/
-create or alter function dbo.fn_getboro(@boro_coden int)
+create or alter function dbo.fn_getborofullname(@boro_coden int)
 returns nvarchar(13)
 with execute as caller as
 	begin

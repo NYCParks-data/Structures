@@ -27,7 +27,7 @@ create or alter view dbo.vw_bin_single_address as
 				 max(address_type) as address_type,
 				 max(low_house_num) as low_house_num,
 				 max(norm_street_name) as norm_street_name,--count(distinct bin)
-				 max(case when usps_city is null or usps_city = '' then upper(dbo.fn_getcity(boro_code)) else usps_city) as usps_city,
+				 max(case when usps_city is null or usps_city = '' then upper(dbo.fn_getborofullname(boro_code)) else usps_city) as usps_city,
 				 max(boro_code) as boro_code,
 				 max(zip_code) as zip_code
 		  from systemdb.dbo.vw_address_review_by_address
