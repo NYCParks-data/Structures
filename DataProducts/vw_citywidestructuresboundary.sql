@@ -20,7 +20,7 @@
 use interimdb
 go
 
-create or alter view dbo.vw_citywidestructuresboundaries as 
+create or alter view dbo.vw_citywidestructuresboundary as 
 	with structures as(
 		select system,
 			   shape.STCentroid() as shape
