@@ -17,10 +17,10 @@
 	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
 																													   												
 ***********************************************************************************************************************/
-use systemdb
+use interimdb
 go
 
-create or alter function dbo.fn_getboundaries(@shape geometry)
+create or alter function dbo.fn_citywidegisboundary(@shape geometry)
 	returns table
 	as
 
@@ -36,29 +36,29 @@ create or alter function dbo.fn_getboundaries(@shape geometry)
 				/*If the geometry type of the input shape is a point, take that raw value, otherwise caluclate a centroid*/
 		 from (select case when upper(@shape.STGeometryType()) = 'POINT' then @shape else @shape.STCentroid() end as shape) as l
 		 inner join
-			 systemdb.dbo.police_precincts as r
+			 citywidegis.dprpolice_precincts as r
 		 on l.shape.STIntersects(r.shape) = 1
 		 /*Spatial intersect join community boards*/
 		 inner join
-		 	 systemdb.dbo.community_board_districts_waterincluded as r2
+		 	 citywidegis.dprcommunity_board_districts_waterincluded as r2
 		 on l.shape.STIntersects(r2.shape) = 1
 		 /*Spatial intersect join city council districts*/
 		 inner join	 
-		 	 systemdb.dbo.city_council_districts_waterincluded as r3
+		 	 citywidegis.dprcity_council_districts_waterincluded as r3
 		 on l.shape.STIntersects(r3.shape) = 1
 		 /*Spatial intersect join zipcodes*/
 		 inner join
-		 	 systemdb.dbo.zipcode as r4
+		 	 citywidegis.dprzipcode as r4
 		 on l.shape.STIntersects(r4.shape) = 1
 		 		 inner join
 			 /*Spatial intersect US Congressional Districts*/
-		 	 systemdb.dbo.us_congressional_districts_waterincluded as r5
+		 	 citywidegis.dprus_congressional_districts_waterincluded as r5
 		 on l.shape.STIntersects(r5.shape) = 1
 		 		 inner join
 			 /*Spatial intersect NYS Assembly Districts*/
-		 	 systemdb.dbo.state_assembly_districts_waterincluded as r6
+		 	 citywidegis.dprstate_assembly_districts_waterincluded as r6
 		 on l.shape.STIntersects(r6.shape) = 1
 		 		 inner join
 			 /*Spatial intersect NYS Senate Districts*/
-		 	 systemdb.dbo.state_senate_districts_waterincluded as r7
+		 	 citywidegis.dprstate_senate_districts_waterincluded as r7
 		 on l.shape.STIntersects(r7.shape) = 1)
