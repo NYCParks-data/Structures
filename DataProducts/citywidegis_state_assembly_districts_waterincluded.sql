@@ -18,7 +18,7 @@
 																													   												
 ***********************************************************************************************************************/
 create table interimdb.dbo.citywidegis_state_assembly_districts_waterincluded(objectid int not null,
-																			  assembdist smallint,
+																			  assemdist smallint,
 																			  shape geometry);
 
-create clustered index idx_assembdist on interimdb.dbo.citywidegis_state_assembly_districts_waterincluded (assembdist);
+create clustered index idx_assembdist on interimdb.dbo.citywidegis_state_assembly_districts_waterincluded (assemdist);

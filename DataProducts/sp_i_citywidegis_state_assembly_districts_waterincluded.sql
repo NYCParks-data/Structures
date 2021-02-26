@@ -31,10 +31,10 @@
 
 		 begin transaction
 			insert into interimdb.dbo.citywidegis_state_assembly_districts_waterincluded(objectid,
-																					     assembdist,
+																					     assemdist,
 																					     shape)
 				select objectid,
-					   assembdist,
+					   assemdist,
 					   shape
 				from citywidegis.dpr.state_assembly_districts_waterincluded
 		 commit;

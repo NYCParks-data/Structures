@@ -36,29 +36,29 @@ create or alter function dbo.fn_citywidegisboundary(@shape geometry)
 				/*If the geometry type of the input shape is a point, take that raw value, otherwise caluclate a centroid*/
 		 from (select case when upper(@shape.STGeometryType()) = 'POINT' then @shape else @shape.STCentroid() end as shape) as l
 		 inner join
-			 citywidegis.dpr.police_precincts as r
-		 on l.shape.STIntersects(r.shape) = 1
+			 interimdb.dbo.police_precincts as r
+		 on l.shape.STWithin(r.shape) = 1
 		 /*Spatial intersect join community boards*/
 		 inner join
-		 	 citywidegis.dpr.community_board_districts_waterincluded as r2
-		 on l.shape.STIntersects(r2.shape) = 1
+		 	 interimdb.dbo.community_board_districts_waterincluded as r2
+		 on l.shape.STWithin(r2.shape) = 1
 		 /*Spatial intersect join city council districts*/
 		 inner join	 
-		 	 citywidegis.dpr.city_council_districts_waterincluded as r3
-		 on l.shape.STIntersects(r3.shape) = 1
+		 	 interimdb.dbo.city_council_districts_waterincluded as r3
+		 on l.shape.STWithin(r3.shape) = 1
 		 /*Spatial intersect join zipcodes*/
 		 inner join
-		 	 citywidegis.dpr.zipcode as r4
-		 on l.shape.STIntersects(r4.shape) = 1
-		 		 inner join
+		 	 interimdb.dbo.zipcode as r4
+		 on l.shape.STWithin(r4.shape) = 1
+		 inner join
 			 /*Spatial intersect US Congressional Districts*/
-		 	 citywidegis.dpr.us_congressional_districts_waterincluded as r5
-		 on l.shape.STIntersects(r5.shape) = 1
-		 		 inner join
+		 	 interimdb.dbo.us_congressional_districts_waterincluded as r5
+		 on l.shape.STWithin(r5.shape) = 1
+		 inner join
 			 /*Spatial intersect NYS Assembly Districts*/
-		 	 citywidegis.dpr.state_assembly_districts_waterincluded as r6
-		 on l.shape.STIntersects(r6.shape) = 1
-		 		 inner join
+		 	 interimdb.dbo.state_assembly_districts_waterincluded as r6
+		 on l.shape.STWithin(r6.shape) = 1
+		 inner join
 			 /*Spatial intersect NYS Senate Districts*/
-		 	 citywidegis.dpr.state_senate_districts_waterincluded as r7
-		 on l.shape.STIntersects(r7.shape) = 1)
+		 	 interimdb.dbo.state_senate_districts_waterincluded as r7
+		 on l.shape.STWithin(r7.shape) = 1)
