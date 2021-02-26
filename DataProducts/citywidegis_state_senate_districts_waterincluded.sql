@@ -17,8 +17,8 @@
 	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
 																													   												
 ***********************************************************************************************************************/
-create table interimdb.dbo.citywidegis_state_senate_districts_waterincluded(objectid int,
+create table interimdb.dbo.citywidegis_state_senate_districts_waterincluded(objectid int not null,
 																			stsendist smallint,
-																			shape geometry)
+																			shape geometry);
 
-create clustered index idx_stsendist on interimdb.dbo.citywidegis_state_senate_districts_waterincluded (stsendist)
+create clustered index idx_stsendist on interimdb.dbo.citywidegis_state_senate_districts_waterincluded (stsendist);

@@ -21,6 +21,12 @@ sqlcmd -S . -E -i citywidegis_us_congressional_districts_waterincluded.sql
 
 sqlcmd -S . -E -i citywidegis_zipcode.sql
 
+sqlcmd -S . -E -i citywidegis_city_council_districts_waterincluded.sql
+
+sqlcmd -S . -E -i citywidegis_community_board_districts_waterincluded.sql
+
+sqlcmd -S . -E -i citywidegis_police_precincts.sql
+
 REM Create the stored procedures to populate the boundary tables
 REM ----------------------------------------------
 sqlcmd -S . -E -i sp_i_citywidegis_state_assembly_districts_waterincluded.sql

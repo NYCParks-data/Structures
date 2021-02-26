@@ -19,6 +19,6 @@
 ***********************************************************************************************************************/
 create table interimdb.dbo.citywidegis_zipcode(objectid int,
 											   zip_code smallint,
-											   shape geometry)
+											   shape geometry);
 
-create clustered index idx_congdist on interimdb.dbo.citywidegis_zipcode (zip_code)
+create clustered index idx_congdist on interimdb.dbo.citywidegis_zipcode (zip_code);

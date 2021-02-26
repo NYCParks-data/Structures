@@ -17,8 +17,8 @@
 	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
 																													   												
 ***********************************************************************************************************************/
-create table interimdb.dbo.citywidegis_us_congressional_districts_waterincluded(objectid int not null,
-																			    congdist smallint,
-																			    shape geometry);
+create table interimdb.dbo.citywidegis_police_precincts(objectid int not null,
+														precinct smallint null,
+														shape geometry null);
 
-create clustered index idx_congdist on interimdb.dbo.citywidegis_us_congressional_districts_waterincluded (congdist);
+create clustered index idx_precint on interimdb.dbo.citywidegis_police_precincts (precinct);
