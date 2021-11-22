@@ -111,6 +111,9 @@ if __name__ == '__main__':
        
         schedule.every().sunday.at('07:00').do(processNotebooks, notebookDirectory='weekly_pre_QA')
         schedule.every().friday.at('22:00').do(processNotebooks, notebookDirectory='weekly_post_QA')
+       
+        # schedule.every().tuesday.at('21:00').do(processNotebooks, notebookDirectory='weekly_pre_QA')
+        # schedule.every().tuesday.at('22:00').do(processNotebooks, notebookDirectory='weekly_post_QA')
         
 
         # Run the scheduled tasks
