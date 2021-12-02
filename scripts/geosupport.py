@@ -86,7 +86,8 @@ def func1b(borough=None, addressno=None, streetname=None, api_key=None, ip=None)
                 'out_fire_co', 'out_fire_co_str', 'out_fire_div', 'out_b10sc1',
                 'out_police_patrol_boro', 'out_police_area', 'out_police_pct', 
                 'out_san_sched', 'out_san_dist_section', 'out_san_recycle', 'out_san_reg', 'out_san_org_pick_up',
-                'out_usps_city_name', 'out_preferred_lgc', 'out_sos_ind', 'out_physical_id', 'in_boro')
+                'out_usps_city_name', 'out_preferred_lgc', 'out_sos_ind', 'out_physical_id', 'in_boro',
+                'out_census_tract_2020','out_latitude','out_longitude')
 
     #Load the dictionary nested in the display dictionary
     raw_dict = json.loads(response.data).get('display')

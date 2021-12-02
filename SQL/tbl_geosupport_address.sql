@@ -1,20 +1,15 @@
 /***********************************************************************************************************************
 																													   	
  Created By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management         											   
- Modified By: Dan Gallagher, daniel.gallagher@parks.nyc.gov, Innovation & Performance Management																						   			          
+ Modified By: Julie Tsitron, julie.tsitron@parks.nyc.gov, Innovation & Performance Management																						   			          
  Created Date:  12/17/2019																							   
- Modified Date: 01/13/2020																							   
+ Modified Date: 12/02/2021																							   
 											       																	   
  Project: StructuresDB	
  																							   
- Tables Used: <Database>.<Schema>.<Table Name1>																							   
- 			  <Database>.<Schema>.<Table Name2>																								   
- 			  <Database>.<Schema>.<Table Name3>				
+ Tables Used: structuresdb.dbo.tbl_geosupport_address			
 			  																				   
- Description: <Lorem ipsum dolor sit amet, legimus molestiae philosophia ex cum, omnium voluptua evertitur nec ea.     
-	       Ut has tota ullamcorper, vis at aeque omnium. Est sint purto at, verear inimicus at has. Ad sed dicat       
-	       iudicabit. Has ut eros tation theophrastus, et eam natum vocent detracto, purto impedit appellantur te	   
-	       vis. His ad sonet probatus torquatos, ut vim tempor vidisse deleniti.>  									   
+ Description: Query for creation or replacement of the geosupport_address table in structuresdb									   
 																													   												
 ***********************************************************************************************************************/
 --drop table structuresdb.dbo.tbl_geosupport_address
@@ -61,5 +56,7 @@ create table structuresdb.dbo.tbl_geosupport_address (BIN int not null, --foreig
 											  Sanitation_Reg_Pickup varchar(5),
 											  Address_ID int,
 											  official_address int,
-											  posted_address int);
-
+											  posted_address int,
+											  Census_Tract varchar(10),
+											  Latitude varchar(10),
+											  Longitude varchar(10));
